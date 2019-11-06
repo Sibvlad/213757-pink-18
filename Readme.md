@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владислав Сибирев](https://up.htmlacademy.ru/adaptive/18/user/213757).
-* Наставник: `Неизвестно`.
+* Наставник: Никита Сигов.
 
 ---
 
