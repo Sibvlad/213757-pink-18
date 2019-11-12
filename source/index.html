@@ -9,8 +9,7 @@
       <a class="page-header__logo">
         <img class="main-header__logo-image" src="https://via.placeholder.com/150x150" width="75" height="25" alt="Пинк">
       </a>
-      <button class="main-header__open"></button>
-      <button class="main-header__close"></button>
+      <button class="main-header__toggle"></button>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -32,24 +31,24 @@
     </header>
     <main>
       <section class="intro">
-        <div class="intro__index">
-          <img class="index-index__picture" src="https://via.placeholder.com/150x150" width="300" height="395" alt="Пинк">
-          <h1 class="index-index__slogan">Загляните на жизнь иначе!</h1>
+        <div class="intro__picture picture">
+          <img class="picture__index" src="https://via.placeholder.com/150x150" width="300" height="395" alt="Пинк">
+          <h1 class="picture__slogan">Загляните на жизнь иначе!</h1>
         </div>
-        <div class="intro-download">
-          <a class="intro-download__btn" href="#">Скачать приложение</a>
-          <ul class="intro-download__mobyle-system mobyle-system">
-            <li class="system-list__item">
-              <a class="mobyle-system__ios">IOS</a>
+        <div class="intro__download download-app">
+          <a class="download-app__btn" href="#">Скачать приложение</a>
+          <ul class="download-app__mobile-list mobile-list">
+            <li class="mobile-list__item">
+              <a class="mobile-list__ios">IOS</a>
             </li>
             <li class="system-list__item">
-              <a class="mobyle-system__android">Android</a>
+              <a class="mobile-list__android">Android</a>
             </li>
             <li class="system-list__item">
-              <a class="mobyle-system__window">Window</a>
+              <a class="mobile-list__window">Window</a>
             </li>
           </ul>
-          <p class="intro-download__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <p class="download-app__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
       <section class="advantages">
@@ -75,9 +74,76 @@
                 заводите новых</p>
             </li>
           </ul>
-          <div class="advantages__picture--mobile--phone"></div>
+          <div class="advantages__picture advantages__picture--mobile-phone"></div>
         </div>
       </section>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item  slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            </blockquote>
+          </div>
+          <p class="reviews__toggles slider__toggles">
+            <a class="slider__toggle" type="button">1</a>
+            <a class="slider__toggle" type="button">2</a>
+            <a class="slider__toggle" type="button">3</a>
+          </p>
+        </div>
+      </section>
+      <section class="price">
+        <div class="price__wrapper slider">
+          <div class="price__list slider__list">
+            <table class="price__table slider_item table">
+              <tr>
+                <th class="table__heading">Стандарт <span class="table__price">3,99 USD</span></th>
+              </tr>
+              <tr>
+                <td class="table__value">Розовый фильтр</td>
+              </tr>
+              <tr>
+                <td class="table__value">Смайлики</td>
+              </tr>
+              <tr>
+                <td class="table__value table__value--no-check">Комментарии</td>
+              </tr>
+            </table>
+          </div>
+          <p class="price__toggles slider__toggles">
+            <a class="slider__toggle" type="button">1</a>
+            <a class="slider__toggle" type="button">2</a>
+            <a class="slider__toggle" type="button">3</a>
+          </p>
+        </div>
+      </section>
+      <footer>
+        <div class="footer__wrapper">
+          <h3 class="footer__slogan">Остались вопросы? Звоните свяжитесь с нами</h3>
+          <div class="footer__contacts contacts">
+            <div class="contacts__block">
+              <p class="contacts__texte">
+                <span class="contacts__sub-title">Записаться</span>
+                <span class="contacts__info">+7 (812) 555-66-66</span>
+              </p>
+            </div>
+            <div class="contacts__block">
+              <p class="contacts__texte">
+                <span class="contacts__sub-title">Пишите</span>
+                <a href="#" class="contacts__info contacts__info--link">+7 (812) 555-66-66</a>
+              </p>
+            </div>
+            <div class="contacts__block">
+              <p class="contacts__texte">
+                <span class="contacts__sub-title">Приезжайте в гости</span>
+                <span class="contacts__info">ул. Большая Конюшенная, 19/8</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__map">
+        </div>
+      </footer>
     </main>
   </body>
 </html>
