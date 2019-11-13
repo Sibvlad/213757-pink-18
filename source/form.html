@@ -9,8 +9,7 @@
       <a class="page-header__logo">
         <img class="main-header__logo-image" src="https://via.placeholder.com/150x150" width="75" height="25" alt="Пинк">
       </a>
-      <button class="main-header__open"></button>
-      <button class="main-header__close"></button>
+      <button class="main-header__toggle"></button>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -33,10 +32,82 @@
     <main>
       <div class="form-photo">
         <div class="form-photo__intro intro">
-          <h1 class="intro-index">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <h1 class="intro__index">Конкурс на самое безбашенное путешествие с Пинк</h1>
           <div class="intro__background"></div>
         </div>
       </div>
+      <section class="form">
+        <form class="form__competition form-competition" action="https://echo.htmlacademy.ru" method="post">
+          <h2 class="form-competition__start">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
+            миль на вашу бонусную карту!</h2>
+          <fieldset class="form-competition__fieldset">
+            <ul class="form-competition__list response-options">
+              <li class="response-options__item">
+                <label class="response-options__personal-data">Фамилия<input class="response-options__input" type="text" name="name" placeholder="Укажите фамилию*"></label>
+              </li>
+              <li class="response-options__item">
+                <label class="response-options__personal-data">Имя<input class="response-options__input" type="text" name="baxter" placeholder="Укажите имя*"></label>
+              </li>
+              <li class="response-options__item">
+                <label class="response-options__personal-data">Отчество<input class="response-options__input" type="text" name="baxter" placeholder="Ну и отчество тоже*"></label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-competition__fieldset form-competition__fieldset--checkbox">
+            <legend class="form-competition__legend">Ваши безбашенные достижения в путешествии</legend>
+            <ul class=" form-competition__list achieving-options">
+              <li class="achieving-options__item">
+                <label class="achieving-options__response"><input class="achieving-options__input" type="checkbox" name="achieving-shark" value="shark">Сделал селфи с акулой</label>
+              </li>
+              <li class="achieving-options__item">
+                <label class="achieving-options__response"><input class="achieving-options__input achieving-options__input--checked" type="checkbox" name="achieving-sunrise" value="sunrise" checked>Обгорел на пляже</label>
+              </li>
+              <li class="achieving-options__item">
+                <label class="achieving-options__response"><input class="achieving-options__input" type="checkbox" name="achieving-chuck" value="chuck-norris ">Видел Чака Норриса</label>
+              </li>
+              <li class="achieving-options__item">
+                <label class="achieving-options__response"><input class="achieving-options__input" type="checkbox" name="achieving-souvenir" value="souvenir">Накупил сувениров</label>
+              </li>
+              <li class="achieving-options__item">
+                <label class="achieving-options__response"><input class="achieving-options__input achieving-options__input--checked" type="checkbox" name="achieving-tower" value="tower" checked>Удержал башню</label>
+              </li>
+              <li class="achieving-options__item">
+                <label class="achieving-options__response"><input class="achieving-options__input" type="checkbox" name="achieving-hotel" value="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-competition__fieldset">
+            <ul class="form-competition__list response-options">
+              <li class="response-options__item">
+                <label class="response-options__personal-data">Номер телефона<input class="response-options__input" type="text" name="number-telephone" placeholder="Номер пожалуйста"></label>
+              </li>
+              <li class="response-options__item">
+                <label class="response-options__personal-data">Адрес почты<input class="response-options__input" type="text" name="adress" placeholder="Введите почту*"></label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-competition__fieldset form-competition__fieldset--radio">
+            <legend class="form-competition__legend">с каким приложением путешествовали?</legend>
+            <ul class="form-competition__list application-list">
+              <li class="application-list__item">
+                <label class="application-list__response"><input class="application-list__input" type="radio" name="application-option" value="ios" checked>Pink для iOS</label>
+              </li>
+              <li class="application-list__item">
+                <label class="application-list__response"><input class="application-list__input" type="radio" name="application-option" value="Android">Pink для Android</label>
+              </li>
+              <li class="application-list__item">
+                <label class="application-list__response"><input class="application-list__input" type="radio" name="application-option" value="Windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-competition__fieldset form-competition__fieldset--textarea">
+            <label class="form-competition__legend" for="form-competition__taxtarea">Опишите свои эмоции</label>
+            <textarea name="comment" rows="20" id="form-competition__taxtarea">Можно прям в красках не стесняясь в выражениях</textarea>
+          </fieldset>
+          <button class="form__btn" type="submit" value="Отправить форму">Отправить форму</button>
+          <small class="form__legend"><sup>*</sup> — обязательные поля</small>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
