@@ -1,0 +1,13 @@
+@import "vars";
+@import "mixins";
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/advantages";
+@import "blocks/content-photo";
+@import "blocks/footer";
+
+body {
+  color: $base-color;
+  @include indentation (0, 0);
+  font-family: $font-family;
+}
