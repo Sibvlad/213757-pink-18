@@ -29,13 +29,13 @@ main {
   font-family: $font-family;
 
   &__btn {
+    @include headline(17px, 17px);
+    @include border-radius(35px);
     color: $slogan-color;
     text-decoration: none;
-    @include headline(17px, 17px);
     margin-bottom: 30px;
     padding: 10px 45px;
     border: solid 4px $slogan-color;
-    @include border-radius(35px);
   }
 
   &__content {
@@ -60,10 +60,11 @@ main {
   position: relative;
 
   &__background {
-    background-image: url("/img/bg-back-mobile@1x.jpg");
     @include size(320px, 170px);
-    background-position: 0px -70px;
-}
+    background-image: url("/img/bg-back-mobile@1x.jpg");
+    background-position: 0 -70px;
+  }
+
   &__index {
     @include headline(24px, 28px);
     @include intro-text(15px, 20px);

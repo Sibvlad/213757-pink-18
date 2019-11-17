@@ -14,8 +14,6 @@
 }
 
 @mixin border-radius($size-border) {
-  -moz-border-radius: $size-border;
-  -webkit-border-radius: $size-border;
   border-radius: $size-border;
 }
 
@@ -26,8 +24,8 @@
 
 
 @mixin intro-text($top, $left) {
-  font-weight: 400;
   @include position-absolute;
+  font-weight: 400;
   top: $top;
   left: $left;
   color: $slogan-color;

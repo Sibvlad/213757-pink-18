@@ -19,9 +19,9 @@
 }
 
 .list-benefits {
+  @include indentation(0, 0);
   list-style: none;
   text-align: center;
-  @include indentation(0, 0);
   padding-top: 50px;
 
   &__item {
@@ -38,7 +38,7 @@
 }
 
 .advantages__picture {
-  background-image: url("/img/iphone-screen-mobile@1x.png");
   @include size(150px, 280px);
+  background-image: url("/img/iphone-screen-mobile@1x.png");
   margin: 0 auto;
 }
