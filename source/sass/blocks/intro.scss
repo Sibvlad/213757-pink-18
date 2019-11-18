@@ -26,7 +26,6 @@ main {
 .download-app {
   text-align: center;
   color: $slogan-color;
-  font-family: $font-family;
 
   &__btn {
     @include headline(17px, 17px);

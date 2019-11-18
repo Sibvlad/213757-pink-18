@@ -6,8 +6,13 @@
 @import "blocks/content-photo";
 @import "blocks/footer";
 
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+}
+
 body {
   @include indentation (0, 0);
   color: $base-color;
-  font-family: $font-family;
+  font-family: "Open Sans", sans-serif;
 }
