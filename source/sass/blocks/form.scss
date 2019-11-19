@@ -1,0 +1,84 @@
+.form-competition {
+  &__start {
+    @include headline(14px, 30px);
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+  }
+
+  &__fieldset {
+    border: none;
+    padding-top: 36px;
+    padding-bottom: 40px;
+  }
+}
+
+.form-competition__legend {
+  @include headline(14px, 18px);
+  text-align: center;
+  color: #d22856;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.form-competition__fieldset ul {
+  @include indentation(0, 0);
+  list-style: none;
+  margin-left: 10px;
+}
+
+.form-competition__fieldset--checkbox,
+.form-competition__fieldset--radio {
+  background: #f2f2f2;
+}
+
+.form-competition__fieldset textarea {
+  @include size(240px, 160px);
+  @include headline(18px, 30px);
+  margin-left: 8px;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.response-options {
+  &__personal-data {
+    @include headline(14px, 30px);
+    color: #d22856;
+  }
+
+  &__input {
+    @include headline(18px, 30px);
+    display: block;
+    margin-bottom: 9px;
+    width: 230px;
+    padding: 8px 25px;
+    margin-right: 30px;
+  }
+}
+
+.form {
+  &__btn {
+    @include headline(18px, 30px);
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 280px;
+    color: $slogan-color;
+    margin-bottom: 35px;
+    background: #2aab6d;
+    margin-left: 20px;
+    text-transform: uppercase;
+  }
+
+  &__legend {
+    display: block;
+    margin-left: 70px;
+  }
+}
+
+
+.application-list__item,
+.achieving-options__item {
+  margin-bottom: 40px;
+}
