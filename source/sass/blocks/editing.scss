@@ -53,13 +53,13 @@
 }
 
 .toolbox__toggle {
-   @include size(8px, 8px);
-   @include border-radius(50%);
-   position: absolute;
-   top: -5px;
-   left: 190px;
-   cursor: pointer;
-   border: 2px solid #d22856;
-   border-radius: 50%;
-   background: #f1f1f1;
- }
+  @include size(8px, 8px);
+  @include border-radius(50%);
+  position: absolute;
+  top: -5px;
+  left: 190px;
+  cursor: pointer;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background: #f1f1f1;
+}
