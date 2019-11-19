@@ -1,0 +1,34 @@
+@mixin headline ($size, $size-line) {
+  font-size: $size;
+  line-height: $size-line;
+}
+
+@mixin indentation ($padding, $margin) {
+  padding: $padding;
+  margin: $margin;
+}
+
+@mixin size ($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin border-radius($size-border) {
+  border-radius: $size-border;
+}
+
+@mixin position-absolute {
+  position: absolute;
+  content: "";
+}
+
+
+@mixin intro-text($top, $left) {
+  @include position-absolute;
+  font-weight: 400;
+  top: $top;
+  left: $left;
+  color: $slogan-color;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}

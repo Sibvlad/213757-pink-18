@@ -1,0 +1,44 @@
+.advantages {
+  position: relative;
+
+  &__slogan {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  &__question,
+  &__suggestion {
+    @include headline(24px, 32px);
+    font-weight: 400;
+  }
+}
+
+.advantages__items {
+  background: #f2f2f2;
+}
+
+.list-benefits {
+  @include indentation(0, 0);
+  list-style: none;
+  text-align: center;
+  padding-top: 50px;
+
+  &__item {
+    @include headline(14px, 24px);
+    margin-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.list-benefits__title {
+  @include headline(18px, 24px);
+  margin-bottom: 15px;
+}
+
+.advantages__picture {
+  @include size(150px, 280px);
+  background-image: url("/img/iphone-screen-mobile@1x.png");
+  margin: 0 auto;
+}
