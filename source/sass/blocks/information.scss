@@ -3,8 +3,8 @@
   text-align: center;
 
   &__slogan {
-    margin-bottom: 40px;
     @include headline(24px, 24px);
+    margin-bottom: 40px;
   }
 }
 
