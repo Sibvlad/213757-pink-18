@@ -5,16 +5,17 @@ main {
 .picture {
   position: relative;
   background-color: #1d2632;
-
-  &__index {
-    @include size(320px, 395px);
-  }
-
-  &__slogan {
-    @include headline(24px, 32px);
-    @include intro-text(60px, 20px);
-  }
 }
+
+.picture__index {
+  @include size(320px, 395px);
+}
+
+.picture__slogan {
+  @include headline(24px, 32px);
+  @include intro-text(60px, 20px);
+}
+
 
 .intro__download {
   background-color: #1d2632;
@@ -26,46 +27,48 @@ main {
 .download-app {
   text-align: center;
   color: $slogan-color;
+}
 
-  &__btn {
-    @include headline(17px, 17px);
-    @include border-radius(35px);
-    color: $slogan-color;
-    text-decoration: none;
-    margin-bottom: 30px;
-    padding: 10px 45px;
-    border: solid 4px $slogan-color;
-  }
 
-  &__content {
-    @include headline (14px, 24px);
-  }
+.download-app__btn {
+  @include headline(17px, 17px);
+  @include border-radius(35px);
+  color: $slogan-color;
+  text-decoration: none;
+  margin-bottom: 30px;
+  padding: 10px 45px;
+  border: solid 4px $slogan-color;
+}
+
+.download-app__content {
+  @include headline (14px, 24px);
 }
 
 .mobile-list {
   list-style: none;
   margin-top: 50px;
   font-size: 0;
-
-
-  &__item {
-    @include size(50px, 50px);
-    display: inline-block;
-    margin-right: 30px;
-  }
 }
+
+.mobile-list__item {
+  @include size(50px, 50px);
+  display: inline-block;
+  margin-right: 30px;
+}
+
 
 .intro {
   position: relative;
-
-  &__background {
-    @include size(320px, 170px);
-    background-image: url("/img/bg-back-mobile@1x.jpg");
-    background-position: 0 -70px;
-  }
-
-  &__index {
-    @include headline(24px, 28px);
-    @include intro-text(15px, 20px);
-  }
 }
+
+.intro__background {
+  @include size(320px, 170px);
+  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background-position: 0 -70px;
+}
+
+.intro__index {
+  @include headline(24px, 28px);
+  @include intro-text(15px, 20px);
+}
+

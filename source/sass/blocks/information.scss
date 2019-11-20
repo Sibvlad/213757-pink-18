@@ -1,23 +1,23 @@
 .information {
   padding: 40px 35px;
   text-align: center;
-
-  &__slogan {
-    @include headline(24px, 24px);
-    margin-bottom: 40px;
-  }
 }
 
-.contacts {
-  &__texte {
-    @include indentation(0, 0);
-    margin-bottom: 20px;
-
-    &__sub-title {
-      @include headline(18px, 32px);
-    }
-  }
+.information__slogan {
+  @include headline(24px, 24px);
+  margin-bottom: 40px;
 }
+
+.contacts__texte {
+  @include indentation(0, 0);
+  margin-bottom: 20px;
+}
+
+
+.contacts__sub-title {
+  @include headline(18px, 32px);
+}
+
 
 .contacts__info {
   @include headline(24px, 24px);

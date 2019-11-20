@@ -11,27 +11,29 @@
   margin: 0 auto;
   border-collapse: collapse;
   margin-bottom: 40px;
-
-  &__heading {
-    @include headline(18px, 30px);
-    height: 100px;
-    text-align: center;
-    border: 2px solid #f2f2f2;
-    color: white;
-    text-transform: uppercase;
-    background-color: #1d2632;
-  }
-
-  &__value {
-    @include headline(14px, 30px);
-    text-align: left;
-    padding-left: 25px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: 2px solid $slogan-color;
-    background: $slogan-color;
-  }
 }
+
+
+.table__heading {
+  @include headline(18px, 30px);
+  height: 100px;
+  text-align: center;
+  border: 2px solid #f2f2f2;
+  color: white;
+  text-transform: uppercase;
+  background-color: #1d2632;
+}
+
+.table__value {
+  @include headline(14px, 30px);
+  text-align: left;
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 2px solid $slogan-color;
+  background: $slogan-color;
+}
+
 
 .table__price {
   @include headline(24px, 30px);
