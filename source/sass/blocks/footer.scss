@@ -1,35 +1,37 @@
 .page-footer {
   width: 320px;
   padding: 40px 70px;
-
-  &__logo img {
-    @include size(145px, 70px);
-    margin-bottom: 40px;
-    margin-left: 15px;
-  }
 }
+
+.page-footer__logo img {
+  @include size(145px, 70px);
+  margin-bottom: 40px;
+  margin-left: 15px;
+}
+
 
 .social {
   position: relative;
   width: 177px;
-
-  &__list {
-    @include indentation(0, 0);
-    display: inline-block;
-    list-style: none;
-    font-size: 0;
-    vertical-align: top;
-    margin-bottom: 45px;
-  }
-
-  &__item {
-    @include size(43px, 43px);
-    display: inline-block;
-    margin-right: 12px;
-    border: 4px solid #e9ebec;
-    border-radius: 50px;
-  }
 }
+
+.social__list {
+  @include indentation(0, 0);
+  display: inline-block;
+  list-style: none;
+  font-size: 0;
+  vertical-align: top;
+  margin-bottom: 45px;
+}
+
+.social__item {
+  @include size(43px, 43px);
+  display: inline-block;
+  margin-right: 12px;
+  border: 4px solid #e9ebec;
+  border-radius: 50px;
+}
+
 
 .social__item:last-child {
   margin-right: 0;
@@ -37,19 +39,19 @@
 
 .copyright {
   position: relative;
+}
 
-  &__text {
-    @include headline(14px, 18px);
-    text-align: center;
-    font-weight: 400;
-    margin-left: 15px;
-  }
+.copyright__text {
+  @include headline(14px, 18px);
+  text-align: center;
+  font-weight: 400;
+  margin-left: 15px;
+}
 
-  &__link {
-    @include position-absolute;
-    @include size(30px, 35px);
-    font-size: 0;
-    background: url("/img/htmlacademy.svg") no-repeat;
-    margin-left: 25px;
-  }
+.copyright__link {
+  @include position-absolute;
+  @include size(30px, 35px);
+  font-size: 0;
+  background: url("/img/htmlacademy.svg") no-repeat;
+  margin-left: 25px;
 }

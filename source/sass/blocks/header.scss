@@ -1,18 +1,18 @@
 .main-header {
   background-color: #1d2632;
   width: 320px;
+}
 
-  &__heading {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-  }
+.main-header__heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
 
-  &__logo-image {
-    @include size(75px, 25px);
-    margin: 20px;
-  }
+.main-header__logo-image {
+  @include size(75px, 25px);
+  margin: 20px;
 }
 
 .main-header__toggle {
@@ -24,20 +24,20 @@
   @include indentation(0, 0);
   list-style: none;
   border: solid 1px $base-color;
+}
 
-  &__item {
-    @include headline(18px, 32px);
-    border: solid 1px $base-color;
-    font-weight: 700;
+.site-list__item {
+  @include headline(18px, 32px);
+  border: solid 1px $base-color;
+  font-weight: 700;
+}
 
-    a {
-      display: block;
-      color: $slogan-color;
-      text-decoration: none;
-      text-transform: uppercase;
-      text-align: center;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-  }
+.site-list__item a {
+  display: block;
+  color: $slogan-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

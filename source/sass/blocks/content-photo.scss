@@ -1,29 +1,29 @@
 .slogan {
   padding: 34px 38px;
   text-align: center;
+}
 
-  &__text {
-    @include headline(14px, 30px);
-  }
+.slogan__text {
+  @include headline(14px, 30px);
 }
 
 .panorama {
   position: relative;
+}
 
-  &__image-main {
-    @include size(320px, 137px);
-  }
+.panorama__image-main {
+  @include size(320px, 137px);
+}
 
-  &__inscription {
-    @include position-absolute;
-    @include headline(12px, 24px);
-    right: 22px;
-    text-transform: uppercase;
-    color: $slogan-color;
-    background: #d22856;
-    padding: 6px 23px;
-    font-weight: 700;
-  }
+.panorama__inscription {
+  @include position-absolute;
+  @include headline(12px, 24px);
+  right: 22px;
+  text-transform: uppercase;
+  color: $slogan-color;
+  background: #d22856;
+  padding: 6px 23px;
+  font-weight: 700;
 }
 
 .item-photo__image {
@@ -39,17 +39,18 @@
   width: 240px;
   padding: 20px;
   margin-bottom: 20px;
-
-  &__name {
-    @include indentation(0, 0);
-    font-weight: 700;
-  }
-
-  &__text {
-    @include indentation(0, 0);
-    margin-bottom: 5px;
-  }
 }
+
+.comment__name {
+  @include indentation(0, 0);
+  font-weight: 700;
+}
+
+.comment__text {
+  @include indentation(0, 0);
+  margin-bottom: 5px;
+}
+
 
 .comment__date {
   font-weight: 400;
@@ -58,18 +59,26 @@
 
 .like {
   position: relative;
+}
 
-  &__heart {
-    @include position-absolute;
-    @include size(13px, 12px);
-    font-size: 0;
-    background: url("/img/icon-heart.svg") no-repeat;
-    margin-right: 20px;
-    top: 5px;
-  }
+.like__heart {
+  @include position-absolute;
+  @include size(13px, 12px);
+  font-size: 0;
+  background: url("/img/icon-heart.svg") no-repeat;
+  margin-right: 20px;
+  top: 5px;
+}
 
-  &__count {
-    margin-left: 30px;
-    color: #d22856;
-  }
+.like__count {
+  margin-left: 30px;
+  color: #d22856;
+}
+
+
+.content-photo__last-slogan {
+  @include headline(14px, 30px);
+  padding-top: 14px;
+  padding-bottom: 34px;
+  text-align: center;
 }
