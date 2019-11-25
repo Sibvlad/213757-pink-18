@@ -7,30 +7,32 @@
 </head>
   <body>
     <header class="main-header">
-      <div class="main-header__heading">
-        <a class="main-header__logo">
-          <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Пинк">
-        </a>
-      <button class="main-header__toggle"></button>
-      </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item ">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a>Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
+      <div class="main-header__wrapper">
+        <div class="main-header__heading">
+          <a class="main-header__logo">
+            <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Пинк">
+          </a>
+          <button class="main-header__toggle"></button>
         </div>
-      </nav>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item ">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a>Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
       <div class="content-photo">
@@ -44,10 +46,12 @@
         <section class="content-photo__comment comment-picture">
           <article class="comment-picture__item item-photo">
             <div class="item-photo__image-panorama panorama">
-              <img class="panorama__image-main panorama__image--panorama-of-day" src="img/panorama-mobile@1x.jpg" height="137" width="320" alt="Панорама дня">
+              <img class="panorama__image-main panorama__image--mobile" src="img/panorama-mobile@1x.jpg" height="137" width="320" alt="Панорама дня">
+              <img class="panorama__image-main panorama__image--tablet" src="img/panorama-tablet@1x.jpg" height="660" width="507" alt="Панорама дня">
+              <img class="panorama__image-main panorama__image--desktop" src="img/panorama-desktop@1x.jpg" height="506" width="1200" alt="Панорама дня">
               <span class="panorama__inscription">Панорама дня</span>
             </div>
-            <div class="item-photo__comment comment">
+            <div class="item-photo__comment comment comment-main">
               <p class="comment__name">Анна<span class="comment__date"> (5 минут назад)</span></p>
               <p class="comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
               <div class="comment__block-like like">
@@ -58,7 +62,9 @@
           </article>
           <article class="comment-picture__item item-photo">
             <div class="item-photo__image">
-              <img class="item-photo__image-simple" src="img/photo-car-mobile@1x.jpg" height="180" width="280" alt="Фотография один">
+              <img class="item-photo__image-simple item-photo__image-simple--mobile" src="img/photo-car-mobile@1x.jpg" height="180" width="280" alt="Фотография один">
+              <img class="item-photo__image-simple item-photo__image-simple--tablet" src="img/photo-car-tablet@1x.jpg" height="300" width="300" alt="Фотография один">
+              <img class="item-photo__image-simple item-photo__image-simple--desktop" src="img/photo-car-desktop@1x.jpg" height="400" width="320" alt="Фотография один">
             </div>
             <div class="item-photo__comment comment">
               <p class="comment__name">Левон<span class="comment__date"> (5 часов назад)</span></p>
@@ -71,7 +77,9 @@
           </article>
           <article class="comment-picture__item item-photo">
             <div class="item-photo__image">
-              <img class="item-photo__image-simple" src="img/photo-drumset-mobile@1x.jpg" height="180" width="280" alt="Фотография два">
+              <img class="item-photo__image-simple item-photo__image-simple--mobile" src="img/photo-drumset-mobile@1x.jpg" height="180" width="280" alt="Фотография два">
+              <img class="item-photo__image-simple item-photo__image-simple--tablet" src="img/photo-drumset-tablet@1x.jpg" height="300" width="300" alt="Фотография два">
+              <img class="item-photo__image-simple item-photo__image-simple--desktop" src="img/photo-drumset-desktop@1x.jpg" height="400" width="320" alt="Фотография один">
             </div>
             <div class="item-photo__comment comment">
               <p class="comment__name">Антон<span class="comment__date"> (15 часов назад)</span></p>
@@ -84,7 +92,9 @@
           </article>
           <article class="comment-picture__item item-photo">
             <div class="item-photo__image">
-              <img class="item-photo__image-simple" src="img/photo-window-mobile@1x.jpg" height="180" width="280" alt="Фотография три">
+              <img class="item-photo__image-simple item-photo__image-simple--mobile" src="img/photo-window-mobile@1x.jpg" height="180" width="280" alt="Фотография три">
+              <img class="item-photo__image-simple item-photo__image-simple--tablet" src="img/photo-window-tablet@1x.jpg" height="300" width="300" alt="Фотография три">
+              <img class="item-photo__image-simple item-photo__image-simple--desktop" src="img/photo-window-desktop@1x.jpg" height="400" width="320" alt="Фотография три">
             </div>
             <div class="item-photo__comment comment">
               <p class="comment__name">Антон<span class="comment__date"> (15 часов назад)</span></p>
@@ -97,7 +107,9 @@
           </article>
           <article class="comment-picture__item item-photo">
             <div class="item-photo__image">
-              <img class="item-photo__image-simple" src="img/photo-fair-mobile@1x.jpg" height="180" width="280" alt="Фотография четыре">
+              <img class="item-photo__image-simple item-photo__image-simple--mobile" src="img/photo-fair-mobile@1x.jpg" height="180" width="280" alt="Фотография четыре">
+              <img class="item-photo__image-simple item-photo__image-simple--tablet" src="img/photo-fair-tablet@1x.jpg" height="300" width="300" alt="Фотография четыре">
+              <img class="item-photo__image-simple item-photo__image-simple--desktop" src="img/photo-fair-desktop@1x.jpg" height="400" width="320" alt="Фотография четыре">
             </div>
             <div class="item-photo__comment comment">
               <p class="comment__name">Борис<span class="comment__date"> (20 часов назад)</span></p>
@@ -110,7 +122,9 @@
           </article>
           <article class="comment-picture__item item-photo">
             <div class="item-photo__image">
-              <img class="item-photo__image-simple" src="img/photo-pov-mobile@1x.jpg" height="180" width="280" alt="Фотография пять">
+              <img class="item-photo__image-simple item-photo__image-simple--mobile" src="img/photo-pov-mobile@1x.jpg" height="180" width="280" alt="Фотография пять">
+              <img class="item-photo__image-simple item-photo__image-simple--tablet" src="img/photo-pov-tablet@1x.jpg" height="300" width="300" alt="Фотография пять">
+              <img class="item-photo__image-simple item-photo__image-simple--desktop" src="img/photo-pov-desktop@1x.jpg" height="400" width="320" alt="Фотография пять">
             </div>
             <div class="item-photo__comment comment">
               <p class="comment__name">Максим<span class="comment__date"> (40 часов назад)</span></p>
@@ -123,7 +137,9 @@
           </article>
           <article class="comment-picture__item item-photo">
             <div class="item-photo__image">
-              <img class="item-photo__image-simple" src="img/photo-wing-mobile@1x.jpg" height="180" width="280" alt="Фотография шесть">
+              <img class="item-photo__image-simple item-photo__image-simple--mobile" src="img/photo-wing-mobile@1x.jpg" height="180" width="280" alt="Фотография шесть">
+              <img class="item-photo__image-simple item-photo__image-simple--tablet" src="img/photo-wing-tablet@1x.jpg" height="300" width="300" alt="Фотография шесть">
+              <img class="item-photo__image-simple item-photo__image-simple--desktop" src="img/photo-wing-desktop@1x.jpg" height="400" width="320" alt="Фотография шесть">
             </div>
             <div class="item-photo__comment comment">
               <p class="comment__name">Надежда <span class="comment__date"> (40 часов назад)</span></p>

@@ -11,8 +11,16 @@
   position: relative;
 }
 
-.panorama__image-main {
+.panorama__image--mobile {
   @include size(320px, 137px);
+}
+
+.panorama__image--tablet {
+  display: none;
+}
+
+.panorama__image--desktop {
+  display: none;
 }
 
 .panorama__inscription {
@@ -26,11 +34,18 @@
   font-weight: 700;
 }
 
-.item-photo__image {
+.item-photo__image-simple--mobile {
   @include size(280px, 180px);
   margin: 0 auto;
 }
 
+.item-photo__image-simple--mobile--tablet {
+  display: none;
+}
+
+.item-photo__image-simple--desktop  {
+  display: none;
+}
 
 .comment {
   @include headline(14px, 24px);
@@ -51,11 +66,9 @@
   margin-bottom: 5px;
 }
 
-
 .comment__date {
   font-weight: 400;
 }
-
 
 .like {
   position: relative;
@@ -82,3 +95,103 @@
   padding-bottom: 34px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .content-photo__comment {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .slogan {
+    @include headline(18px, 30px);
+    padding: 100px 113px;
+    text-align: center;
+    width: 410px;
+    margin: 0 auto;
+  }
+
+  .panorama__image--mobile {
+    display: none;
+  }
+
+  .panorama__image--desktop {
+    display: none;
+  }
+
+  .panorama__image--tablet {
+    @include size(100%, 507px);
+    display: block;
+  }
+
+  .panorama__inscription {
+    right: 22px;
+    top: 40px;
+  }
+
+  .comment-main {
+    margin: 0 auto;
+    width: 88%;
+    margin-bottom: 50px;
+  }
+
+  .comment-picture {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .item-photo__image-simple--tablet {
+    @include size(300px, 300px);
+  }
+
+  .item-photo__image-simple--mobile {
+    display: none;
+  }
+
+  .item-photo__image-simple--desktop {
+    display: none;
+  }
+
+  .item-photo:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  .item-photo:not(:first-child) .comment {
+    width: 260px;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment-picture {
+    width: 1200px;
+    margin: 0 auto;
+    background: yellow;
+  }
+
+  .item-photo:nth-of-type(3n+2) {
+    margin-left: 130px;
+  }
+
+  .slogan {
+    width: 520px;
+    margin: 0 auto;
+    padding: 88px 0;
+  }
+
+  .panorama__image--mobile {
+    display: none;
+  }
+
+  .panorama__image--tablet {
+    display: none;
+  }
+
+  .panorama__image--desktop {
+    @include size(100%, 500px);
+    display: block;
+  }
+}
+
