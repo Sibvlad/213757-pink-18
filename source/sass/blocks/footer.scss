@@ -1,4 +1,4 @@
-.page-footer {
+.page-footer__wrapper {
   width: 320px;
   padding: 40px 70px;
 }
@@ -8,7 +8,6 @@
   margin-bottom: 40px;
   margin-left: 15px;
 }
-
 
 .social {
   position: relative;
@@ -54,4 +53,40 @@
   font-size: 0;
   background: url("/img/htmlacademy.svg") no-repeat;
   margin-left: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    width: 660px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 20px;
+  }
+
+  .page-footer__logo img {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: -15px;
+  }
+
+  .social__list {
+    margin-bottom: 0;
+  }
+
+  .copyright {
+    margin-top: 10px;
+  }
+
+  .copyright__text {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding: 70px 0;
+  }
 }
