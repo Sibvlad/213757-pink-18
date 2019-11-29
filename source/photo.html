@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Title</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -158,7 +159,8 @@
           <div class="photo-editing__wrapper">
             <form class="photo-editing__form" action="https://echo.htmlacademy.ru" method="post">
               <div class="photo-editing__picture">
-                <img src="img/photo-road-mobile@1x.jpg" class="photo-editing__image" width = "280" height="374" alt="Редактор фотографий">
+                <img src="img/photo-road-mobile@1x.jpg" class="photo-editing__image photo-editing__image--mobile" width = "280" height="374" alt="Редактор фотографий">
+                <img src="img/photo-road-tablet@1x.jpg" class="photo-editing__image photo-editing__image--tablet" width = "300" height="400" alt="Редактор фотографий">
               </div>
               <div class="photo-editing__toolbox toolbox">
                 <div class="toolbox__gif"></div>
@@ -170,9 +172,21 @@
                   </div>
                   <div class="toolbox__toggle"></div>
                 </div>
+                <div class="toolbox__range-controls toolbox__range-controls--second">
+                  <div class="toolbox__scale">
+                    <div class="toolbox__bar"></div>
+                  </div>
+                  <div class="toolbox__toggle"></div>
+                </div>
+                <div class="toolbox__range-controls toolbox__range-controls--third">
+                  <div class="toolbox__scale">
+                    <div class="toolbox__bar"></div>
+                  </div>
+                  <div class="toolbox__toggle"></div>
+                </div>
+                <button class="photo-editing__btn photo-editing__btn--active" type="submit">Запостить</button>
+                <button class="photo-editing__btn photo-editing__btn--disabled" type="submit">Отмена</button>
               </div>
-              <button class="photo-editing__btn photo-editing__btn--active" type="submit">Запостить</button>
-              <button class="photo-editing__btn photo-editing__btn--disabled" type="submit">Отмена</button>
             </form>
           </div>
         </section>

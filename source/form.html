@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -42,9 +43,9 @@
         </div>
       </div>
       <section class="form">
+        <h2 class="form-competition__start">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
+        миль на вашу бонусную карту!</h2>
         <form class="form__competition form-competition" action="https://echo.htmlacademy.ru" method="post">
-          <h2 class="form-competition__start">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
-            миль на вашу бонусную карту!</h2>
           <fieldset class="form-competition__fieldset">
             <ul class="form-competition__list response-options">
               <li class="response-options__item">
@@ -54,7 +55,7 @@
                 <label class="response-options__personal-data">Имя<input class="response-options__input" type="text" name="baxter" placeholder="Укажите имя*"></label>
               </li>
               <li class="response-options__item">
-                <label class="response-options__personal-data">Отчество<input class="response-options__input" type="text" name="baxter" placeholder="Ну и отчество тоже*"></label>
+                <label class="response-options__personal-data">Отчество<input class="response-options__input response-options__input--last" type="text" name="baxter" placeholder="Ну и отчество тоже*"></label>
               </li>
             </ul>
           </fieldset>
@@ -82,12 +83,14 @@
             </ul>
           </fieldset>
           <fieldset class="form-competition__fieldset">
-            <ul class="form-competition__list response-options">
+            <ul class="form-competition__list response-options response-options--second-form">
               <li class="response-options__item">
-                <label class="response-options__personal-data">Номер телефона<input class="response-options__input" type="text" name="number-telephone" placeholder="Номер пожалуйста"></label>
+                <label class="response-options__personal-data response-options__personal-data--mobyle">Номер телефона<input class="response-options__input" type="text" name="number-telephone" placeholder="Номер пожалуйста"></label>
+                <input class=" response-options__input response-options__input-tablet" type="text" name="number-telephone" placeholder="Номер пожалуйста" id="telephone-number"><label class="response-options__personal-data response-options__label--tablet" for="telephone-number">Номер телефона</label>
               </li>
               <li class="response-options__item">
-                <label class="response-options__personal-data">Адрес почты<input class="response-options__input" type="text" name="adress" placeholder="Введите почту*"></label>
+                <label class="response-options__personal-data response-options__personal-data--mobyle">Адрес почты<input class="response-options__input response-options__input--last" type="text" name="adress" placeholder="Введите почту*"></label>
+                <input class="response-options__input response-options__input-tablet" type="text" name="adress" placeholder="Введите почту*" id="e-mail"><label class="response-options__personal-data response-options__label--tablet" for="e-mail">Адрес почты</label>
               </li>
             </ul>
           </fieldset>
@@ -106,11 +109,13 @@
             </ul>
           </fieldset>
           <fieldset class="form-competition__fieldset form-competition__fieldset--textarea">
-            <div class="form-competition__legend" for="form-competition__taxtarea">Опишите свои эмоции</div>
+            <div class="form-competition__legend">Опишите свои эмоции</div>
             <textarea name="comment" rows="20" id="form-competition__taxtarea">Можно прям в красках не стесняясь в выражениях</textarea>
           </fieldset>
-          <button class="form__btn" type="submit" value="Отправить форму">Отправить форму</button>
-          <small class="form__legend"><sup>*</sup> — обязательные поля</small>
+          <div class="form__btn-block">
+            <button class="form__btn" type="submit" value="Отправить форму">Отправить форму</button>
+            <small class="form__legend"><sup>*</sup> — обязательные поля</small>
+          </div>
         </form>
       </section>
     </main>

@@ -2,11 +2,11 @@
   padding: 50px 20px;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .reviews__item {
   @include indentation(0, 0);
-  margin-bottom: 70px;
 }
 
 
@@ -34,4 +34,57 @@
   background: url("/img/bg-map-mobile@1x.png");
   width: 320px;
   height: 280px;
+}
+
+.reviews__job {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .reviews__wrapper {
+    padding: 70px 20px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .reviews__job {
+    @include headline(18px, 30px);
+    display: inline;
+    color: #bec2c7;
+  }
+
+  .footer__map {
+    background: url("/img/bg-map-tablet@1x.jpg") no-repeat;
+    width: 660px;
+    height: 370px;
+    margin: 0 auto;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__wrapper {
+    padding: 110px 250px;
+  }
+
+  .reviews__job {
+    padding-top: 0;
+    margin-top: 0;
+    display: block;
+  }
+
+  .slider__toggle {
+    display: none;
+  }
+
+  .footer__map {
+    background: url("/img/bg-map-desktop@1x.jpg") no-repeat;
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+  }
 }

@@ -162,6 +162,14 @@
     margin-bottom: 20px;
     min-height: 110px;
   }
+
+  .content-photo__last-slogan {
+    @include headline(18px, 30px);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    width: 380px;
+  }
 }
 
 @media (min-width: $desktop-width) {
