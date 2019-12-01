@@ -54,6 +54,18 @@
   margin-right: 30px;
 }
 
+.response-options--second-form li {
+  display: flex;
+  flex-direction: column;
+}
+
+.response-options__input--second-form {
+  order: 2;
+}
+
+.response-options__label--second-form {
+  order: 1;
+}
 
 .form__btn {
   @include headline(18px, 30px);
@@ -81,7 +93,6 @@
 .response-options__personal-data--tablet {
   display: none;
 }
-
 
 @media (min-width: $tablet-width) {
   .form-competition__start {
@@ -129,19 +140,17 @@
     background: white;
   }
 
-  .response-options__personal-data--mobyle {
-    display: none;
-  }
-
-  .response-options__label--tablet {
+  .response-options__label--second-form {
     display: block;
     margin-bottom: 35px;
+    order: 2;
   }
 
-  .response-options__input-tablet {
+  .response-options__input--second-form {
     margin-left: 0;
     margin-bottom: 20px;
     width: 400px;
+    order: 1;
   }
 
   .form-competition__fieldset textarea {
@@ -211,7 +220,7 @@
     width: 940px;
   }
 
-  .response-options__input-tablet {
+  .response-options__input--second-form {
     margin-right: 70px;
     width: 355px;
   }
