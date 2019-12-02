@@ -11,18 +11,6 @@
   position: relative;
 }
 
-.panorama__image--mobile {
-  @include size(320px, 137px);
-}
-
-.panorama__image--tablet {
-  display: none;
-}
-
-.panorama__image--desktop {
-  display: none;
-}
-
 .panorama__inscription {
   @include position-absolute;
   @include headline(12px, 24px);
@@ -32,19 +20,6 @@
   background: #d22856;
   padding: 6px 23px;
   font-weight: 700;
-}
-
-.item-photo__image-simple--mobile {
-  @include size(280px, 180px);
-  margin: 0 auto;
-}
-
-.item-photo__image-simple--mobile--tablet {
-  display: none;
-}
-
-.item-photo__image-simple--desktop {
-  display: none;
 }
 
 .comment {
@@ -110,19 +85,6 @@
     margin: 0 auto;
   }
 
-  .panorama__image--mobile {
-    display: none;
-  }
-
-  .panorama__image--desktop {
-    display: none;
-  }
-
-  .panorama__image--tablet {
-    @include size(100%, 507px);
-    display: block;
-  }
-
   .panorama__inscription {
     right: 22px;
     top: 40px;
@@ -140,18 +102,6 @@
     flex-wrap: wrap;
   }
 
-  .item-photo__image-simple--tablet {
-    @include size(300px, 300px);
-  }
-
-  .item-photo__image-simple--mobile {
-    display: none;
-  }
-
-  .item-photo__image-simple--desktop {
-    display: none;
-  }
-
   .item-photo:not(:first-child) {
     margin-left: 20px;
   }
@@ -161,6 +111,14 @@
     padding: 20px;
     margin-bottom: 20px;
     min-height: 110px;
+  }
+
+  .content-photo__last-slogan {
+    @include headline(18px, 30px);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    width: 380px;
   }
 }
 
@@ -179,18 +137,5 @@
     width: 520px;
     margin: 0 auto;
     padding: 88px 0;
-  }
-
-  .panorama__image--mobile {
-    display: none;
-  }
-
-  .panorama__image--tablet {
-    display: none;
-  }
-
-  .panorama__image--desktop {
-    @include size(100%, 500px);
-    display: block;
   }
 }

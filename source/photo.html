@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Title</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -46,9 +47,11 @@
         <section class="content-photo__comment comment-picture">
           <article class="comment-picture__item item-photo">
             <div class="item-photo__image-panorama panorama">
-              <img class="panorama__image-main panorama__image--mobile" src="img/panorama-mobile@1x.jpg" height="137" width="320" alt="Панорама дня">
-              <img class="panorama__image-main panorama__image--tablet" src="img/panorama-tablet@1x.jpg" height="660" width="507" alt="Панорама дня">
-              <img class="panorama__image-main panorama__image--desktop" src="img/panorama-desktop@1x.jpg" height="506" width="1200" alt="Панорама дня">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x">
+                <img class="photo__image" src="img/panorama-mobile@1x.jpg" alt="Фотография дня">
+              </picture>
               <span class="panorama__inscription">Панорама дня</span>
             </div>
             <div class="item-photo__comment comment comment-main">
@@ -61,11 +64,11 @@
             </div>
           </article>
           <article class="comment-picture__item item-photo">
-            <div class="item-photo__image">
-              <img class="item-photo__image-simple item-photo__image-simple--mobile" src="img/photo-car-mobile@1x.jpg" height="180" width="280" alt="Фотография один">
-              <img class="item-photo__image-simple item-photo__image-simple--tablet" src="img/photo-car-tablet@1x.jpg" height="300" width="300" alt="Фотография один">
-              <img class="item-photo__image-simple item-photo__image-simple--desktop" src="img/photo-car-desktop@1x.jpg" height="400" width="320" alt="Фотография один">
-            </div>
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x">
+              <img class="photo__image" src="img/photo-car-mobile@1x.jpg" alt="Машина">
+            </picture>
             <div class="item-photo__comment comment">
               <p class="comment__name">Левон<span class="comment__date"> (5 часов назад)</span></p>
               <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -76,11 +79,11 @@
             </div>
           </article>
           <article class="comment-picture__item item-photo">
-            <div class="item-photo__image">
-              <img class="item-photo__image-simple item-photo__image-simple--mobile" src="img/photo-drumset-mobile@1x.jpg" height="180" width="280" alt="Фотография два">
-              <img class="item-photo__image-simple item-photo__image-simple--tablet" src="img/photo-drumset-tablet@1x.jpg" height="300" width="300" alt="Фотография два">
-              <img class="item-photo__image-simple item-photo__image-simple--desktop" src="img/photo-drumset-desktop@1x.jpg" height="400" width="320" alt="Фотография один">
-            </div>
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x">
+              <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" alt="Барабаны">
+            </picture>
             <div class="item-photo__comment comment">
               <p class="comment__name">Антон<span class="comment__date"> (15 часов назад)</span></p>
               <p class="comment__text">Соседи будут рады!.</p>
@@ -91,11 +94,11 @@
             </div>
           </article>
           <article class="comment-picture__item item-photo">
-            <div class="item-photo__image">
-              <img class="item-photo__image-simple item-photo__image-simple--mobile" src="img/photo-window-mobile@1x.jpg" height="180" width="280" alt="Фотография три">
-              <img class="item-photo__image-simple item-photo__image-simple--tablet" src="img/photo-window-tablet@1x.jpg" height="300" width="300" alt="Фотография три">
-              <img class="item-photo__image-simple item-photo__image-simple--desktop" src="img/photo-window-desktop@1x.jpg" height="400" width="320" alt="Фотография три">
-            </div>
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x">
+              <img class="photo__image" src="img/photo-window-mobile@1x.jpg" alt="Окно">
+            </picture>
             <div class="item-photo__comment comment">
               <p class="comment__name">Антон<span class="comment__date"> (15 часов назад)</span></p>
               <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -106,11 +109,11 @@
             </div>
           </article>
           <article class="comment-picture__item item-photo">
-            <div class="item-photo__image">
-              <img class="item-photo__image-simple item-photo__image-simple--mobile" src="img/photo-fair-mobile@1x.jpg" height="180" width="280" alt="Фотография четыре">
-              <img class="item-photo__image-simple item-photo__image-simple--tablet" src="img/photo-fair-tablet@1x.jpg" height="300" width="300" alt="Фотография четыре">
-              <img class="item-photo__image-simple item-photo__image-simple--desktop" src="img/photo-fair-desktop@1x.jpg" height="400" width="320" alt="Фотография четыре">
-            </div>
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x">
+                <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" alt="Окно">
+              </picture>
             <div class="item-photo__comment comment">
               <p class="comment__name">Борис<span class="comment__date"> (20 часов назад)</span></p>
               <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -121,11 +124,11 @@
             </div>
           </article>
           <article class="comment-picture__item item-photo">
-            <div class="item-photo__image">
-              <img class="item-photo__image-simple item-photo__image-simple--mobile" src="img/photo-pov-mobile@1x.jpg" height="180" width="280" alt="Фотография пять">
-              <img class="item-photo__image-simple item-photo__image-simple--tablet" src="img/photo-pov-tablet@1x.jpg" height="300" width="300" alt="Фотография пять">
-              <img class="item-photo__image-simple item-photo__image-simple--desktop" src="img/photo-pov-desktop@1x.jpg" height="400" width="320" alt="Фотография пять">
-            </div>
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x">
+              <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" alt="Окно">
+            </picture>
             <div class="item-photo__comment comment">
               <p class="comment__name">Максим<span class="comment__date"> (40 часов назад)</span></p>
               <p class="comment__text">Где снег-то?</p>
@@ -136,11 +139,11 @@
             </div>
           </article>
           <article class="comment-picture__item item-photo">
-            <div class="item-photo__image">
-              <img class="item-photo__image-simple item-photo__image-simple--mobile" src="img/photo-wing-mobile@1x.jpg" height="180" width="280" alt="Фотография шесть">
-              <img class="item-photo__image-simple item-photo__image-simple--tablet" src="img/photo-wing-tablet@1x.jpg" height="300" width="300" alt="Фотография шесть">
-              <img class="item-photo__image-simple item-photo__image-simple--desktop" src="img/photo-wing-desktop@1x.jpg" height="400" width="320" alt="Фотография шесть">
-            </div>
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x">
+              <img class="photo__image" src="img/photo-wing--mobile@1x.jpg" alt="Окно">
+            </picture>
             <div class="item-photo__comment comment">
               <p class="comment__name">Надежда <span class="comment__date"> (40 часов назад)</span></p>
               <p class="comment__text">Всем GM и взаимные лайки!</p>
@@ -158,7 +161,8 @@
           <div class="photo-editing__wrapper">
             <form class="photo-editing__form" action="https://echo.htmlacademy.ru" method="post">
               <div class="photo-editing__picture">
-                <img src="img/photo-road-mobile@1x.jpg" class="photo-editing__image" width = "280" height="374" alt="Редактор фотографий">
+                <img src="img/photo-road-mobile@1x.jpg" class="photo-editing__image photo-editing__image--mobile" width = "280" height="374" alt="Редактор фотографий">
+                <img src="img/photo-road-tablet@1x.jpg" class="photo-editing__image photo-editing__image--tablet" width = "300" height="400" alt="Редактор фотографий">
               </div>
               <div class="photo-editing__toolbox toolbox">
                 <div class="toolbox__gif"></div>
@@ -170,9 +174,21 @@
                   </div>
                   <div class="toolbox__toggle"></div>
                 </div>
+                <div class="toolbox__range-controls toolbox__range-controls--second">
+                  <div class="toolbox__scale">
+                    <div class="toolbox__bar"></div>
+                  </div>
+                  <div class="toolbox__toggle"></div>
+                </div>
+                <div class="toolbox__range-controls toolbox__range-controls--third">
+                  <div class="toolbox__scale">
+                    <div class="toolbox__bar"></div>
+                  </div>
+                  <div class="toolbox__toggle"></div>
+                </div>
+                <button class="photo-editing__btn photo-editing__btn--active" type="submit">Запостить</button>
+                <button class="photo-editing__btn photo-editing__btn--disabled" type="submit">Отмена</button>
               </div>
-              <button class="photo-editing__btn photo-editing__btn--active" type="submit">Запостить</button>
-              <button class="photo-editing__btn photo-editing__btn--disabled" type="submit">Отмена</button>
             </form>
           </div>
         </section>

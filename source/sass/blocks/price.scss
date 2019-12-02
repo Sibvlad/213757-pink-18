@@ -16,7 +16,7 @@
 
 .table__heading {
   @include headline(18px, 30px);
-  height: 100px;
+  height: 88px;
   text-align: center;
   border: 2px solid #f2f2f2;
   color: white;
@@ -38,4 +38,57 @@
 .table__price {
   @include headline(24px, 30px);
   font-weight: 400;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .price__wrapper {
+    padding-top: 40px;
+  }
+
+  .table {
+    min-width: 620px;
+  }
+
+  .table__heading {
+    height: 80px;
+    min-width: 155px;
+
+    &--price {
+      background: #f2f2f2;
+    }
+  }
+
+  .table__value {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid #f2f2f2;
+    background: $slogan-color;
+
+    &--name {
+      text-align: left;
+      padding-left: 15px;
+    }
+  }
+
+  .price__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__wrapper {
+    padding-bottom: 90px;
+  }
+
+  .table {
+    min-width: 940px;
+    margin-bottom: 0;
+  }
+
+  .table__heading {
+    height: 88px;
+    min-width: 238px;
+  }
 }

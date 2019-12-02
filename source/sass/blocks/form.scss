@@ -54,6 +54,18 @@
   margin-right: 30px;
 }
 
+.response-options--second-form li {
+  display: flex;
+  flex-direction: column;
+}
+
+.response-options__input--second-form {
+  order: 2;
+}
+
+.response-options__label--second-form {
+  order: 1;
+}
 
 .form__btn {
   @include headline(18px, 30px);
@@ -76,4 +88,161 @@
 .application-list__item,
 .achieving-options__item {
   margin-bottom: 40px;
+}
+
+.response-options__personal-data--tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-competition__start {
+    @include headline(18px, 30px);
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 64px;
+    padding-top: 65px;
+  }
+
+  .form-competition__fieldset {
+    border: 2px solid #f2f2f2;
+    width: 560px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    background: none;
+    margin-bottom: 65px;
+    padding-top: 50px;
+    padding-left: 60px;
+  }
+
+  .form-competition__fieldset:first-of-type {
+    width: 620px;
+    border: none;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .response-options__input {
+    display: inline-block;
+    width: 472px;
+    margin-left: 20px;
+    margin-bottom: 45px;
+    margin-right: 0;
+
+    &--last {
+      margin-bottom: 0;
+      order: 2;
+    }
+  }
+
+  .form-competition__legend {
+    margin-top: -60px;
+    margin-bottom: 50px;
+    background: white;
+  }
+
+  .response-options__label--second-form {
+    display: block;
+    margin-bottom: 35px;
+    order: 2;
+  }
+
+  .response-options__input--second-form {
+    margin-left: 0;
+    margin-bottom: 20px;
+    width: 400px;
+    order: 1;
+  }
+
+  .form-competition__fieldset textarea {
+    width: 460px;
+    text-align: center;
+  }
+
+  .form__btn-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .form__legend {
+    margin-left: 130px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .form-competition {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form-competition__fieldset {
+    width: 370px;
+  }
+
+  .form-competition__fieldset:first-of-type {
+    order: 1;
+    width: 435px;
+  }
+
+  .response-options__input {
+    width: 287px;
+  }
+
+  .form-competition__fieldset--radio {
+    order: 2;
+  }
+
+  .form-competition__fieldset:nth-of-type(3) {
+    order: 3;
+    width: 920px;
+  }
+
+  .response-options--second-form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-competition__fieldset--checkbox {
+    order: 4;
+  }
+
+  .achieving-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 940px;
+  }
+
+  .response-options__input--second-form {
+    margin-right: 70px;
+    width: 355px;
+  }
+
+  .form-competition__fieldset--textarea {
+    order: 5;
+    width: 940px;
+  }
+
+  .form-competition__fieldset textarea {
+    width: 820px;
+    text-align: center;
+  }
+
+  .form__btn-block {
+    order: 6;
+    width: 1050px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .response-options__label--tablet {
+    margin-bottom: 0;
+  }
 }
