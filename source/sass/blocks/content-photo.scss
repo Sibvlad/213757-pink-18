@@ -1,4 +1,5 @@
 .slogan {
+  @include headline(14px, 18px);
   padding: 34px 38px;
   text-align: center;
 }
@@ -11,10 +12,25 @@
   position: relative;
 }
 
+.photo__image-main {
+  width: 100%;
+}
+
+.comment-picture__item {
+  width: 86%;
+  margin: 0 auto;
+}
+
+.photo__image {
+  width: 100%;
+}
+
+
 .panorama__inscription {
   @include position-absolute;
   @include headline(12px, 24px);
-  right: 22px;
+  top: 0;
+  right: 6%;
   text-transform: uppercase;
   color: $slogan-color;
   background: #d22856;
@@ -26,9 +42,14 @@
   @include headline(14px, 24px);
   margin: 0 auto;
   background: #f2f2f2;
-  width: 240px;
-  padding: 20px;
+  width: 86%;
+  padding: 7%;
   margin-bottom: 20px;
+  margin-top: -10px;
+}
+
+.comment-main {
+  width: 72%;
 }
 
 .comment__name {
@@ -63,7 +84,6 @@
   color: #d22856;
 }
 
-
 .content-photo__last-slogan {
   @include headline(14px, 30px);
   padding-top: 14px;
@@ -73,8 +93,12 @@
 
 @media (min-width: $tablet-width) {
   .content-photo__comment {
-    width: 660px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .slogan {
@@ -86,31 +110,32 @@
   }
 
   .panorama__inscription {
-    right: 22px;
-    top: 40px;
+    top: 57px;
   }
 
   .comment-main {
-    margin: 0 auto;
-    width: 88%;
+    width: 85%;
     margin-bottom: 50px;
+    padding: 30px;
+    position: relative;
+    margin-top: -4px;
   }
 
-  .comment-picture {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  .comment-main .like {
+    position: absolute;
+    top: 28px;
+    right: 5%;
   }
 
-  .item-photo:not(:first-child) {
-    margin-left: 20px;
+  .comment-picture__item {
+    width: 45%;
   }
 
-  .item-photo:not(:first-child) .comment {
-    width: 260px;
-    padding: 20px;
+  .comment:not(.comment-main) {
+    width: 80%;
+    padding: 10%;
     margin-bottom: 20px;
-    min-height: 110px;
+    height: 96px;
   }
 
   .content-photo__last-slogan {
@@ -123,19 +148,29 @@
 }
 
 @media (min-width: $desktop-width) {
-  .comment-picture {
-    width: 1200px;
+  .comment-picture__item {
+    width: 25%;
     margin: 0 auto;
-    background: yellow;
   }
 
   .item-photo:nth-of-type(3n+2) {
     margin-left: 130px;
   }
 
+  .item-photo:nth-of-type(4),
+  .item-photo:nth-of-type(7) {
+    margin-right: 130px;
+  }
+
   .slogan {
     width: 520px;
     margin: 0 auto;
     padding: 88px 0;
+  }
+
+  .comment-main {
+    width: 73%;
+    margin-bottom: 50px;
+    margin-top: -4px;
   }
 }

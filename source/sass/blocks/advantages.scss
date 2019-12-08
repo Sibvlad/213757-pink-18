@@ -12,6 +12,7 @@
 
 .advantages__items {
   background: #f2f2f2;
+  width: 100%;
   position: relative;
 }
 
@@ -25,8 +26,8 @@
 .list-benefits__item {
   @include headline(14px, 24px);
   margin-bottom: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 9%;
+  padding-right: 9%;
 }
 
 .list-benefits__title {
@@ -45,29 +46,38 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    width: auto;
+    background: #f2f2f2;
+  }
+
+  .advantages__suggestion {
+    background: white;
+  }
+
   .advantages__slogan {
     padding-top: 80px;
     padding-bottom: 100px;
     text-align: center;
+    width: auto;
+    max-width: 940px;
+    margin: 0 auto;
   }
 
-  .advantages__question,
-  .advantages__suggestion {
+  .advantages__question {
     @include headline(40px, 50px);
   }
 
   .advantages__items {
-    display: flex;
-    justify-content: flex-end;
-    flex-basis: 330px;
     min-height: 435px;
+    max-width: 940px;
+    margin: 0 auto;
   }
 
   .list-benefits {
-    flex-basis: 310px;
     padding-top: 20px;
     text-align: left;
-    margin-right: 40px;
+    margin-left: 330px;
   }
 
   .advantages__picture--mobile-phone3 {
@@ -81,13 +91,14 @@
   .list-benefits__item {
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 
   .effect {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background: white;
   }
 
   .effects__picture {
@@ -105,14 +116,23 @@
   .effects__heading {
     @include headline(30px, 30px);
   }
+
+  .effects__link {
+    color: #d22856;
+    text-decoration: underline;
+  }
+
+  .list-benefits__description {
+    margin-bottom: 25px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__slogan {
     @include headline(50px, 60px);
-    margin-top: 80px;
     text-align: center;
-    padding-bottom: 180px;
+    padding-top: 70px;
+    padding-bottom: 160px;
   }
 
   .advantages__items {
@@ -127,20 +147,16 @@
     flex-direction: row;
     text-align: center;
     justify-content: center;
-    flex-basis: 940px;
-    margin-top: 210px;
+    margin: 0 auto;
+    margin-top: 200px;
     padding-top: 50px;
   }
 
   .list-benefits__item {
     @include headline(18px, 30px);
-    margin-right: 80px;
-    width: 240px;
+    margin-right: 7%;
+    width: 27%;
     margin-bottom: 0;
-  }
-
-  .list-benefits__item:first-child {
-    margin-left: 60px;
   }
 
   .list-benefits__item:last-child {
@@ -151,40 +167,39 @@
     @include size(240px, 300px);
     background: url("/img/iphone-screen-1-desktop@1x.png") no-repeat;
     position: absolute;
-    top: -15%;
-    left: 23%;
+    top: -17%;
+    left: 1%;
   }
 
   .advantages__picture--mobile-phone2 {
-    @include size(240px, 300px);
+    @include size(100%, 300px);
     background: url("/img/iphone-screen-2-desktop@1x.png") no-repeat;
     position: absolute;
-    top: -15%;
-    left: 42%;
+    top: -17%;
+    left: 35%;
   }
 
   .advantages__picture--mobile-phone3 {
     @include size(240px, 300px);
     background: url("/img/iphone-screen-3-desktop@1x.png") no-repeat;
     position: absolute;
-    top: -15%;
-    left: 60%;
+    top: -17%;
+    left: 68%;
   }
 
 
   .list-benefits__title {
     @include headline(30px, 30px);
-    margin-bottom: 30px;
+    margin-bottom: 18px;
+  }
+
+  .effect {
+    padding-bottom: 65px;
+    background: #f2f2f2;
   }
 
   .effects__picture {
     @include size(298px, 345px);
     margin-left: 0;
-  }
-
-  .content-photo__comment {
-    display: flex;
-    flex-direction: row;
-    background: red;
   }
 }

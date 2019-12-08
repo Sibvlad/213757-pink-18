@@ -10,9 +10,11 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <div class="main-header__heading">
-          <a class="main-header__logo">
-            <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Пинк">
-          </a>
+          <picture class="main-header__picture">
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Пинк">
+          </picture>
           <button class="main-header__toggle"></button>
         </div>
         <nav class="main-nav">
@@ -61,23 +63,27 @@
           </div>
       </section>
       <section class="advantages">
-        <div class="advantages__slogan">
-          <h2 class="advantages__question">Устали от серости мегаполиса?</h2>
-          <h2 class="advantages__suggestion"> Нам есть, что вам предложить!</h2>
+        <div class="advantages__suggestion">
+          <div class="advantages__slogan">
+            <h2 class="advantages__question">Устали от серости мегаполиса?<br>Нам есть, что вам<br>предложить!</h2>
+          </div>
         </div>
         <div class="advantages__items">
           <ul class="advantages__list list-benefits">
             <li class="list-benefits__item">
               <h3 class="list-benefits__title">Поднимает настроение</h3>
-              <p class="list-benefits__description">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+              <p class="list-benefits__description">Приложение позволит вам победить осеннюю хандру и деперессию
+                буквально в несколько кликов!</p>
             </li>
             <li class="list-benefits__item">
               <h3 class="list-benefits__title">Меняет мир вокруг</h3>
-              <p class="list-benefits__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <p class="list-benefits__description">Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                чтобы усилить эффект</p>
             </li>
             <li class="list-benefits__item">
               <h3 class="list-benefits__title">Заводит новых друзей</h3>
-              <p class="list-benefits__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+              <p class="list-benefits__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и
+                заводите новых</p>
             </li>
           </ul>
           <div class="advantages__picture advantages__picture--mobile-phone1"></div>

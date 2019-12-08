@@ -57,11 +57,13 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
-    width: 660px;
+    width: auto;
+    max-width: 940px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 40px 20px;
+    background: red;
   }
 
   .page-footer__logo img {
@@ -76,6 +78,11 @@
 
   .copyright {
     margin-top: 10px;
+    margin-right: 40px;
+  }
+
+  .copyright__link {
+    right: -40px;
   }
 
   .copyright__text {
@@ -85,9 +92,15 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    width: 960px;
     margin: 0 auto;
     padding: 70px 0;
-    background: red;
+  }
+
+  .copyright__text {
+    margin-right: 43px;
+  }
+
+  .copyright__link {
+    left: 70px;
   }
 }
