@@ -1,27 +1,25 @@
-main {
-  min-width: 320px;
-}
-
-.picture {
+.intro__picture {
   position: relative;
   background-color: #1d2632;
 }
 
 .picture__index {
-  @include size(320px, 395px);
+  @include size(100%, 400px);
+  background-position: center;
 }
 
 .picture__slogan {
   @include headline(24px, 32px);
-  @include intro-text(60px, 20px);
+  @include intro-text(20px, 20%);
+  right: 20%;
 }
 
-
 .intro__download {
-  background-color: #1d2632;
-  padding: 20px;
-  padding-top: 40px;
-  padding-bottom: 10px;
+  padding-top: 35px;
+  padding-left: 6%;
+  padding-right: 6%;
+  height: 235px;
+  background: #1d2632;
 }
 
 .download-app {
@@ -35,9 +33,9 @@ main {
   @include border-radius(35px);
   color: $slogan-color;
   text-decoration: none;
-  margin-bottom: 30px;
-  padding: 10px 45px;
+  padding: 10px;
   border: solid 4px $slogan-color;
+  display: block;
 }
 
 .download-app__content {
@@ -46,121 +44,122 @@ main {
 
 .mobile-list {
   list-style: none;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   font-size: 0;
 }
 
 .mobile-list__item {
-  @include size(50px, 50px);
+  @include size(50px, 30px);
   display: inline-block;
   margin-right: 30px;
 }
 
-
-.intro {
-  position: relative;
-}
-
 .intro__background {
-  @include size(320px, 170px);
-  background-image: url("/img/bg-back-mobile@1x.jpg");
-  background-position: 0 -70px;
+  @include size(100%, 168px);
+  background: url("/img/bg-back-tablet@1x.jpg") no-repeat;
+  background-position: center;
 }
 
 .intro__index {
-  @include headline(24px, 28px);
-  @include intro-text(15px, 20px);
+  @include headline(24px, 30px);
+  position: absolute;
+  top: 350px;
+  color: white;
+  text-align: center;
+  width: 100%;
 }
 
+
 @media (min-width: $tablet-width) {
-  main {
-    min-width: 660px;
+  .intro {
+    @include size(100%, 620px);
+    background: url("/img/bg-back-tablet@1x.jpg");
+    background-position: center;
   }
 
   .intro__wrapper {
-    @include size(100%, 620px);
-    background: url("/img/bg-back-tablet@1x.jpg");
     border-top: 1px solid transparent;
+    width: auto;
+    max-width: 940px;
   }
 
   .picture__index {
     display: none;
   }
 
-
   .picture__slogan {
     @include headline(40px, 45px);
-    width: 200px;
-    margin-bottom: 100px;
-    margin-left: 85px;
-  }
-
-  .intro__download {
-    background: none;
-    margin-top: 250px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 300px;
-    margin-left: 20px;
-  }
-
-  .intro__background {
-    @include size(100%, 330px);
-    background: url("/img/bg-back-tablet@1x.jpg") no-repeat;
-    background-position: 50% 20%;
-  }
-
-  .intro__index {
-    @include headline(50px, 60px);
-    @include intro-text(10%, 5%);
-    right: 5%;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  main {
-    min-width: 1200px;
-  }
-
-  .intro__wrapper {
-    @include size(100%, 745px);
-    background: url("/img/bg-back-desktop@1x.jpg");
-    margin: 0 auto;
-  }
-
-  .intro__wrapper {
-    width: 960px;
-    margin: 0 auto;
-    background: none;
-  }
-
-  .picture__slogan {
-    @include headline(50px, 55px);
-    margin-bottom: 120px;
-    margin-left: 40px;
+    @include intro-text(100px, 7%);
     width: 250px;
   }
 
   .intro__download {
-    margin-top: 310px;
+    margin-top: 267px;
+    margin-left: 3%;
+    width: 300px;
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
   }
 
   .download-app__btn {
-    @include headline(21px, 18px);
-    padding: 10px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .intro__background {
-    @include size(100%, 285px);
-    background: url("/img/bg-back-desktop@1x.jpg") no-repeat;
-    background-position: 50% 20%;
+    @include size(100%, 333px);
+    background: url("/img/bg-back-tablet@1x.jpg") no-repeat;
+    background-position: center;
   }
 
   .intro__index {
     @include headline(50px, 60px);
-    @include intro-text(10%, 27%);
-    right: 27%;
-    width: 780px;
+    top: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    @include size(100%, 853px);
+    background: url("/img/bg-back-desktop@1x.jpg") no-repeat;
+  }
+
+  .intro__wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .picture__slogan {
+    @include headline(50px, 55px);
+    margin-top: 110px;
+    width: 250px;
+    left: 3%;
+  }
+
+  .intro__download {
+    margin-top: 415px;
+    margin-left: 1%;
+  }
+
+  .download-app__btn {
+    @include headline(21px, 18px);
+    padding: 15px 0;
+    margin-bottom: 65px;
+  }
+
+  .mobile-list__item {
+    margin-bottom: 47px;
+  }
+
+  .intro__background {
+    @include size(100%, 393px);
+    background: url("/img/bg-back-desktop@1x.jpg");
+    background-position: top;
+  }
+
+  .intro__index {
+    top: 150px;
   }
 }

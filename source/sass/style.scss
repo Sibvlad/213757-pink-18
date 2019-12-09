@@ -23,15 +23,3 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
 }
-
-@media (min-width: $tablet-width) {
-  body {
-    min-width: 660px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  body {
-    min-width: 1200px;
-  }
-}

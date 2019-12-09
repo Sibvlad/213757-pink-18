@@ -10,9 +10,11 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <div class="main-header__heading">
-          <a class="main-header__logo">
-            <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Пинк">
-          </a>
+          <picture class="main-header__picture">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Пинк">
+          </picture>
           <button class="main-header__toggle"></button>
         </div>
         <nav class="main-nav">
@@ -37,20 +39,20 @@
     </header>
     <main>
       <div class="content-photo">
-        <div class="content-photo__intro intro">
+        <div class="content-photo__intro intro-photo">
           <div class="intro__background"></div>
-          <h1 class="intro__index">Фотографии пользователей</h1>
+          <h1 class="intro__index">Фотографии<br>пользователей</h1>
         </div>
         <div class="content-photo__slogan slogan">
           <p class="slogan__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
         <section class="content-photo__comment comment-picture">
-          <article class="comment-picture__item item-photo">
+          <article class="comment-picture__item-panorama item-photo">
             <div class="item-photo__image-panorama panorama">
               <picture>
                 <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x">
-                <img class="photo__image" src="img/panorama-mobile@1x.jpg" alt="Фотография дня">
+                <img class="photo__image-main" src="img/panorama-mobile@1x.jpg" alt="Фотография дня">
               </picture>
               <span class="panorama__inscription">Панорама дня</span>
             </div>
@@ -142,7 +144,7 @@
             <picture>
               <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x">
               <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x">
-              <img class="photo__image" src="img/photo-wing--mobile@1x.jpg" alt="Окно">
+              <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" alt="Окно">
             </picture>
             <div class="item-photo__comment comment">
               <p class="comment__name">Надежда <span class="comment__date"> (40 часов назад)</span></p>
