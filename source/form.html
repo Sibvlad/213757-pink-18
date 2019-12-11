@@ -10,9 +10,11 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <div class="main-header__heading">
-          <a class="page-header__logo">
-            <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Пинк">
-          </a>
+          <picture class="main-header__picture">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Пинк">
+          </picture>
           <button class="main-header__toggle"></button>
         </div>
         <nav class="main-nav">
@@ -39,7 +41,7 @@
       <div class="form-photo">
         <div class="form-photo__intro intro-form">
           <div class="intro__background"></div>
-          <h1 class="intro__index">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <h1 class="intro__index">Конкурс на самое<br>безбашенное<br>путешествие с Пинк</h1>
         </div>
       </div>
       <section class="form">
@@ -59,8 +61,8 @@
             </ul>
           </fieldset>
           <fieldset class="form-competition__fieldset form-competition__fieldset--checkbox">
-            <div class="form-competition__legend">Ваши безбашенные достижения в путешествии</div>
-            <ul class=" form-competition__list achieving-options">
+            <div class="form-competition__legend">Ваши безбашенные<br>достижения в путешествии</div>
+            <ul class="form-competition__list achieving-options">
               <li class="achieving-options__item">
                 <label class="achieving-options__response"><input class="achieving-options__input" type="checkbox" name="achieving-shark" value="shark">Сделал селфи с акулой</label>
               </li>
@@ -84,10 +86,10 @@
           <fieldset class="form-competition__fieldset">
             <ul class="form-competition__list response-options response-options--second-form">
               <li class="response-options__item">
-                <input class=" response-options__input response-options__input--second-form" type="text" name="number-telephone" placeholder="Номер пожалуйста" id="telephone-number"><label class="response-options__personal-data response-options__label--second-form" for="telephone-number">Номер телефона</label>
+                <label class="response-options__personal-data response-options__label--second-form" for="telephone-number">Номер телефона</label><input class=" response-options__input response-options__input--second-form" type="text" name="number-telephone" placeholder="Номер пожалуйста" id="telephone-number">
               </li>
               <li class="response-options__item">
-                <input class="response-options__input response-options__input--second-form" type="text" name="adress" placeholder="Введите почту*" id="e-mail"><label class="response-options__personal-data response-options__label--second-form" for="e-mail">Адрес почты</label>
+                <label class="response-options__personal-data response-options__label--second-form" for="e-mail">Адрес почты</label><input class="response-options__input response-options__input--second-form" type="text" name="adress" placeholder="Введите почту*" id="e-mail">
               </li>
             </ul>
           </fieldset>

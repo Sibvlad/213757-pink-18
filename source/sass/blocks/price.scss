@@ -3,92 +3,166 @@
   padding-bottom: 40px;
   text-align: center;
   background: #f2f2f2;
+  max-width: 100%;
 }
 
 
-.table {
-  width: 280px;
-  margin: 0 auto;
+.rates__table {
   border-collapse: collapse;
   margin-bottom: 40px;
+  transform: translateX(-60%);
+  position: relative;
+  left: 65%;
+  width: 240%;
 }
 
+tr:nth-of-type(n+1) .rates__item:nth-child(3) .rates__feature {
+  @include headline(14px, 30px);
+}
 
-.table__heading {
-  @include headline(18px, 30px);
-  height: 88px;
+.rates__header {
+  height: 96px;
   text-align: center;
-  border: 2px solid #f2f2f2;
   color: white;
   text-transform: uppercase;
-  background-color: #1d2632;
+  background: #1d2632;
+  border: 4px solid white;
+  border-top: none;
+
+  &--flag::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 74px;
+    height: 73px;
+    background: url("../img/bg-hit.svg") no-repeat top left;
+    background-size: 74px 73px;
+  }
 }
 
-.table__value {
+.rates__name {
+  @include headline(18px, 30px);
+}
+
+.rates__item {
   @include headline(14px, 30px);
   text-align: left;
-  padding-left: 25px;
+  padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border: 2px solid $slogan-color;
-  background: $slogan-color;
+  border: 4px solid #f2f2f2;
+  background: white;
+}
+
+.rates__feature {
+  font-size: 0;
+}
+
+.rates__feature-status {
+  font-size: 0;
+}
+
+.sr-only {
+  display: none;
 }
 
 
-.table__price {
+.rates__price {
   @include headline(24px, 30px);
   font-weight: 400;
-  display: block;
 }
+
+.rates__flag {
+  position: absolute;
+  top: 6px;
+  left: 35.5%;
+  width: 78px;
+  height: 73px;
+  transform: rotate(-45deg);
+  font-weight: 400;
+}
+
 
 @media (min-width: $tablet-width) {
   .price__wrapper {
     padding-top: 40px;
+    margin: 0 auto;
   }
 
-  .table {
-    min-width: 620px;
+  .rates__table {
+    max-width: 940px;
+    width: 93%;
+    left: 0;
+    transform: translateX(0);
+    margin: 0 auto;
   }
 
-  .table__heading {
-    height: 80px;
-    min-width: 155px;
-
-    &--price {
-      background: #f2f2f2;
-    }
+  tr:nth-of-type(n+1) .rates__item:nth-child(1) .rates__feature {
+    @include headline(14px, 30px);
   }
 
-  .table__value {
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 2px solid #f2f2f2;
-    background: $slogan-color;
-
-    &--name {
-      text-align: left;
-      padding-left: 15px;
-    }
+  tr:nth-of-type(n+1) .rates__item:nth-child(3) .rates__feature {
+    font-size: 0;
   }
 
-  .price__toggles {
-    display: none;
+  .rates__header {
+    width: 24%;
+    height: 85px;
+  }
+
+  .rates__item {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .rates__name {
+    @include headline(16px, 30px);
+  }
+
+  .rates__price {
+    @include headline(18px, 30px);
+  }
+
+  .rates__header--flag::before {
+    left: 52%;
+    width: 61px;
+    height: 61px;
+    background: url("../img/bg-hit-tablet.svg") no-repeat top left;
+    background-size: 61px 61px;
+  }
+
+  .rates__flag {
+    left: 51.5%;
   }
 }
 
+
 @media (min-width: $desktop-width) {
   .price__wrapper {
-    padding-bottom: 90px;
+    padding-bottom: 85px;
   }
 
-  .table {
-    min-width: 940px;
-    margin-bottom: 0;
+  .rates__header {
+    height: 100px;
   }
 
-  .table__heading {
-    height: 88px;
-    min-width: 238px;
+  .rates__item {
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .rates__name {
+    @include headline(18px, 30px);
+  }
+
+  .rates__price {
+    @include headline(24px, 30px);
+  }
+
+  tr:nth-of-type(n+1) .rates__item:nth-child(1) .rates__feature {
+    @include headline(18px, 30px);
   }
 }
