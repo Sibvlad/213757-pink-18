@@ -1,17 +1,16 @@
 .reviews__wrapper {
+  @include headline(18px, 30px);
   padding: 50px 20px;
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 .reviews__item {
   @include indentation(0, 0);
+  margin-bottom: 40px;
 }
 
 
 .reviews__author-name {
-  @include headline(18px, 30px);
   font-weight: 700;
   font-style: normal;
 }
@@ -44,6 +43,13 @@
 @media (min-width: $tablet-width) {
   .reviews__wrapper {
     padding: 70px 20px;
+    width: auto;
+    max-width: 606px;
+    margin: 0 auto;
+  }
+
+  .reviews__text {
+    margin-bottom: 30px;
   }
 
   .reviews__item {
@@ -51,10 +57,16 @@
     flex-direction: column-reverse;
   }
 
+  .reviews__author-name {
+    @include headline(20px, 20px);
+    margin-bottom: 14px;
+  }
+
   .reviews__job {
-    @include headline(18px, 30px);
+    @include headline(14px, 14px);
     display: inline;
     color: #bec2c7;
+    margin-bottom: 40px;
   }
 
   .footer__map {
@@ -67,10 +79,16 @@
 
 @media (min-width: $desktop-width) {
   .reviews__wrapper {
-    padding: 110px 250px;
+    padding: 180px 167px;
+    padding-bottom: 125px;
+  }
+
+  .reviews__author-name {
+    @include headline(24px, 24px);
   }
 
   .reviews__job {
+    @include headline(18px, 18px);
     padding-top: 0;
     margin-top: 0;
     display: block;

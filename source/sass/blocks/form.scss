@@ -10,13 +10,14 @@
   border: none;
   padding-top: 36px;
   padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   &--checkbox,
   &--radio {
     background: #f2f2f2;
   }
 }
-
 
 .form-competition__legend {
   @include headline(14px, 18px);
@@ -29,11 +30,10 @@
 .form-competition__fieldset ul {
   @include indentation(0, 0);
   list-style: none;
-  margin-left: 10px;
 }
 
 .form-competition__fieldset textarea {
-  @include size(240px, 160px);
+  @include size(87%, 160px);
   @include headline(18px, 30px);
   margin-left: 8px;
   padding: 20px;
@@ -43,28 +43,17 @@
 .response-options__personal-data {
   @include headline(14px, 30px);
   color: #d22856;
+  text-transform: uppercase;
+  margin-left: 20px;
 }
 
 .response-options__input {
   @include headline(18px, 30px);
   display: block;
   margin-bottom: 9px;
-  width: 230px;
+  width: 87%;
   padding: 8px 25px;
   margin-right: 30px;
-}
-
-.response-options--second-form li {
-  display: flex;
-  flex-direction: column;
-}
-
-.response-options__input--second-form {
-  order: 2;
-}
-
-.response-options__label--second-form {
-  order: 1;
 }
 
 .form__btn {
@@ -72,61 +61,113 @@
   display: block;
   padding-top: 12px;
   padding-bottom: 12px;
-  width: 280px;
+  width: 87%;
   color: $slogan-color;
+  margin: 0 auto;
   margin-bottom: 35px;
   background: #2aab6d;
-  margin-left: 20px;
+  margin-left: 30px;
   text-transform: uppercase;
 }
 
 .form__legend {
   display: block;
-  margin-left: 70px;
+  text-align: center;
 }
 
 .application-list__item,
 .achieving-options__item {
   margin-bottom: 40px;
+  position: relative;
 }
 
-.response-options__personal-data--tablet {
+.achieving-options__input {
   display: none;
 }
 
+
+.achieving-options__response,
+.application-list__response {
+  @include headline(18px, 30px);
+  padding-left: 70px;
+}
+
+.achieving-options__response::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 37px;
+  height: 37px;
+  background: white;
+  top: -5px;
+  left: 0;
+}
+
+.application-list__input {
+  display: none;
+}
+
+.application-list__response::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 37px;
+  height: 37px;
+  background: white;
+  top: -5px;
+  left: 0;
+  border-radius: 50%;
+}
+
 @media (min-width: $tablet-width) {
+  .form {
+    width: auto;
+    max-width: 940px;
+    margin: 0 auto;
+    background: yellow;
+  }
+
   .form-competition__start {
     @include headline(18px, 30px);
     padding-left: 85px;
     padding-right: 85px;
-    padding-bottom: 64px;
-    padding-top: 65px;
+    padding-bottom: 80px;
+    padding-top: 64px;
   }
 
   .form-competition__fieldset {
     border: 2px solid #f2f2f2;
-    width: 560px;
     margin: 0 auto;
     padding-bottom: 40px;
+    padding-top: 50px;
     background: none;
     margin-bottom: 65px;
-    padding-top: 50px;
     padding-left: 60px;
+    width: 84%;
   }
 
   .form-competition__fieldset:first-of-type {
-    width: 620px;
     border: none;
     margin-top: 0;
     padding: 0;
+    padding-left: 20px;
+    width: 91%;
+    order: 1;
+  }
+
+  .response-options__personal-data {
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .response-options__input {
-    display: inline-block;
-    width: 472px;
-    margin-left: 20px;
+    flex-grow: 1;
     margin-bottom: 45px;
+    margin-left: 20px;
     margin-right: 0;
+    padding: 8px;
 
     &--last {
       margin-bottom: 0;
@@ -140,59 +181,34 @@
     background: white;
   }
 
+  .response-options--second-form li {
+    display: flex;
+    flex-direction: column;
+  }
+
   .response-options__label--second-form {
     display: block;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     order: 2;
   }
 
   .response-options__input--second-form {
     margin-left: 0;
-    margin-bottom: 20px;
-    width: 400px;
+    margin-bottom: 5px;
+    width: 92%;
     order: 1;
   }
 
   .form-competition__fieldset textarea {
-    width: 460px;
+    width: 84%;
     text-align: center;
-  }
-
-  .form__btn-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: block;
+    margin: 0 auto;
   }
 
   .form__legend {
     margin-left: 130px;
     margin-top: 10px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form {
-    width: 1200px;
-    margin: 0 auto;
-  }
-
-  .form-competition {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .form-competition__fieldset {
-    width: 370px;
-  }
-
-  .form-competition__fieldset:first-of-type {
-    order: 1;
-    width: 435px;
-  }
-
-  .response-options__input {
-    width: 287px;
   }
 
   .form-competition__fieldset--radio {
@@ -201,7 +217,55 @@
 
   .form-competition__fieldset:nth-of-type(3) {
     order: 3;
-    width: 920px;
+  }
+
+  .form-competition__fieldset--checkbox {
+    order: 4;
+  }
+
+  .form-competition__fieldset--textarea {
+    order: 5;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .form__btn-block {
+    display: flex;
+    flex-direction: row;
+    order: 6;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .form__btn {
+    margin-left: 0;
+    width: 48%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-competition {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form-competition__fieldset {
+    width: 38%;
+  }
+
+  .form-competition__fieldset:first-of-type {
+    width: 46%;
+    padding-left: 0;
+    margin-right: 50px;
+  }
+
+  .form-competition__fieldset--radio {
+    padding-left: 75px;
+  }
+
+  .form-competition__fieldset:nth-of-type(3) {
+    width: 91%;
   }
 
   .response-options--second-form {
@@ -210,14 +274,33 @@
   }
 
   .form-competition__fieldset--checkbox {
-    order: 4;
+    width: 91%;
+  }
+
+  .achieving-options__response {
+    margin-right: 50px;
+  }
+
+  .achieving-options__item:nth-child(3) .achieving-options__response {
+    margin-right: 0;
+  }
+
+  .achieving-options__item:nth-child(6) .achieving-options__response {
+    margin-right: 0;
+  }
+
+  .achieving-options__item:nth-child(6) .achieving-options__response::before {
+    left: 43px;
+  }
+
+  .achieving-options__item:nth-child(5) .achieving-options__response::before {
+    left: 27px;
   }
 
   .achieving-options {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 940px;
   }
 
   .response-options__input--second-form {
@@ -226,7 +309,6 @@
   }
 
   .form-competition__fieldset--textarea {
-    order: 5;
     width: 940px;
   }
 
@@ -236,7 +318,6 @@
   }
 
   .form__btn-block {
-    order: 6;
     width: 1050px;
     justify-content: space-between;
     margin: 0 auto;
