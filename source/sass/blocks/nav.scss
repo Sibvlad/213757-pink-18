@@ -144,4 +144,17 @@
   .site-list__item:last-child a {
     padding-right: 0;
   }
+
+  .site-list__item--active {
+    position: relative;
+  }
+
+  .site-list__item--active::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    height: 5px;
+    width: 100%;
+    background: white;
+  }
 }

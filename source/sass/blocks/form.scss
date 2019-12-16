@@ -101,6 +101,7 @@
   background: white;
   top: -5px;
   left: 0;
+  border: 2px solid #f2f2f2;
 }
 
 .application-list__input {
@@ -117,6 +118,7 @@
   top: -5px;
   left: 0;
   border-radius: 50%;
+  border: 2px solid #f2f2f2;
 }
 
 @media (min-width: $tablet-width) {
@@ -124,7 +126,6 @@
     width: auto;
     max-width: 940px;
     margin: 0 auto;
-    background: yellow;
   }
 
   .form-competition__start {
@@ -191,6 +192,31 @@
     margin-bottom: 30px;
     order: 2;
   }
+
+  .response-options__item {
+    position: relative;
+  }
+
+  .second-form .response-options__item:nth-child(1)::after {
+    @include position-absolute;
+    width: 60px;
+    height: 50px;
+    background: url("/img/icon-phone.svg") no-repeat #f2f2f2;
+    background-position: center;
+    right: 29px;
+    top: 0;
+  }
+
+  .second-form .response-options__item:nth-child(2)::after {
+    @include position-absolute;
+    width: 60px;
+    height: 50px;
+    background: url("/img/icon-mail.svg") no-repeat #f2f2f2;
+    background-position: center;
+    right: 29px;
+    top: 0;
+  }
+
 
   .response-options__input--second-form {
     margin-left: 0;
@@ -287,10 +313,16 @@
 
   .achieving-options__item:nth-child(6) .achieving-options__response {
     margin-right: 0;
+    margin-left: 15px;
   }
 
   .achieving-options__item:nth-child(6) .achieving-options__response::before {
-    left: 43px;
+    left: 15px;
+  }
+
+  .achieving-options__item:nth-child(5) .achieving-options__response {
+    left: 27px;
+    padding-left: 100px;
   }
 
   .achieving-options__item:nth-child(5) .achieving-options__response::before {
@@ -325,5 +357,10 @@
 
   .response-options__label--tablet {
     margin-bottom: 0;
+  }
+
+  .second-form .response-options__item:nth-child(1)::after,
+  .second-form .response-options__item:nth-child(2)::after {
+    right: 70px;
   }
 }

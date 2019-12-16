@@ -1,6 +1,7 @@
 .information {
   padding: 40px 35px;
   text-align: center;
+  position: relative;
 }
 
 .information__slogan {
@@ -16,6 +17,7 @@
 
 .contacts__sub-title {
   @include headline(18px, 32px);
+  font-weight: bold;
 }
 
 
@@ -27,7 +29,7 @@
 
 @media (min-width: $tablet-width) {
   .information {
-    padding: 50px 120px;
+    padding: 50px 70px;
     width: auto;
     max-width: 940px;
     margin: 0 auto;
@@ -45,8 +47,11 @@
     flex-wrap: wrap;
   }
 
+
   .contacts__block--address {
     flex-grow: 1;
+    width: 100%;
+    margin-top: 50px;
   }
 }
 
@@ -68,8 +73,9 @@
     margin-bottom: 55px;
   }
 
-  .contacts {
-    justify-content: space-between;
+  .contacts__block--address {
+    margin-top: 0;
+    flex-grow: 0;
   }
 
   .contacts__block {
@@ -78,9 +84,5 @@
 
   .contacts__block:nth-child(2) {
     order: 3;
-  }
-
-  .contacts__block--address {
-    flex-grow: 0;
   }
 }

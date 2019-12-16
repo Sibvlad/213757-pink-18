@@ -10,7 +10,7 @@
 .rates__table {
   border-collapse: collapse;
   margin-bottom: 40px;
-  transform: translateX(-60%);
+  transform: translateX(-59.5%);
   position: relative;
   left: 65%;
   width: 240%;
@@ -19,6 +19,39 @@
 tr:nth-of-type(n+1) .rates__item:nth-child(3) .rates__feature {
   @include headline(14px, 30px);
 }
+
+.rates__feature--name-smile {
+  padding-right: 45px;
+}
+
+.rates__feature-status--on {
+  position: relative;
+}
+
+.rates__feature-status--on::after {
+  position: absolute;
+  content: "";
+  background: url("/img/icon-yes.svg") no-repeat;
+  width: 22px;
+  height: 16px;
+  left: 225px;
+  top: -15px;
+}
+
+.rates__feature-status--off {
+  position: relative;
+}
+
+.rates__feature-status--off::after {
+  position: absolute;
+  content: "";
+  background: url("/img/icon-no.svg") no-repeat;
+  width: 27px;
+  height: 28px;
+  left: 245px;
+  top: -15px;
+}
+
 
 .rates__header {
   height: 96px;
@@ -102,8 +135,23 @@ tr:nth-of-type(n+1) .rates__item:nth-child(3) .rates__feature {
     @include headline(14px, 30px);
   }
 
+
   tr:nth-of-type(n+1) .rates__item:nth-child(3) .rates__feature {
     font-size: 0;
+  }
+
+  .rates__feature--name-smile {
+    padding-right: 0;
+  }
+
+  .rates__feature-status--on::after {
+    left: 50px;
+    top: -10px;
+  }
+
+  .rates__feature-status--off::after {
+    left: 50px;
+    top: -15px;
   }
 
   .rates__header {
@@ -164,5 +212,13 @@ tr:nth-of-type(n+1) .rates__item:nth-child(3) .rates__feature {
 
   tr:nth-of-type(n+1) .rates__item:nth-child(1) .rates__feature {
     @include headline(18px, 30px);
+  }
+
+  .rates__feature-status--on::after {
+    left: 80px;
+  }
+
+  .rates__feature-status--off::after {
+    left: 80px;
   }
 }
