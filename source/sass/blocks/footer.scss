@@ -38,22 +38,46 @@
 }
 
 .copyright {
-  position: relative;
+  text-align: center;
+  display: block;
+  border-top: 1px solid transparent;
 }
 
 .copyright__text {
   @include headline(14px, 18px);
-  text-align: center;
   font-weight: 400;
+  display: inline-block;
+  vertical-align: 15px;
 }
 
-.copyright__link {
-  @include position-absolute;
+.copyright__link svg {
   @include size(30px, 35px);
   font-size: 0;
-  background: url("/img/htmlacademy.svg") no-repeat;
-  margin-left: 25px;
 }
+
+.social__link {
+  position: relative;
+}
+
+.social__link--twitter svg {
+  @include size(26px, 26px);
+  fill: #d22856;
+  padding-top: 8px;
+}
+
+.social__link--youtube svg {
+  @include size(26px, 26px);
+  fill: #d22856;
+  padding-top: 8px;
+}
+
+.social__link--facebook svg {
+  @include size(26px, 26px);
+  fill: #d22856;
+  padding-top: 8px;
+  padding-left: 8px;
+}
+
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
@@ -77,7 +101,6 @@
 
   .copyright {
     margin-top: 10px;
-    margin-right: 40px;
   }
 
   .copyright__link {
@@ -93,13 +116,5 @@
   .page-footer__wrapper {
     margin: 0 auto;
     padding: 70px 0;
-  }
-
-  .copyright__text {
-    margin-right: 43px;
-  }
-
-  .copyright__link {
-    left: 70px;
   }
 }

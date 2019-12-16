@@ -169,8 +169,20 @@
   }
 
   .comment-main {
-    width: 73%;
+    width: 84%;
     margin-bottom: 50px;
     margin-top: -4px;
+    margin-left: 130px;
+  }
+
+  .photo__image-main {
+    min-width: 200%;
+    margin-left: -350px;
+    height: 506px;
+  }
+
+  .panorama__inscription {
+    left: 917px;
+    width: 100px;
   }
 }
