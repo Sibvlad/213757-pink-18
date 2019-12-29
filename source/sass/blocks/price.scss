@@ -25,31 +25,18 @@ tr:nth-of-type(n+1) .rates__item:nth-child(3) .rates__feature {
 }
 
 .rates__feature-status--on {
-  position: relative;
-}
-
-.rates__feature-status--on::after {
   position: absolute;
   content: "";
-  background: url("/img/icon-yes.svg") no-repeat;
-  width: 22px;
-  height: 16px;
-  left: 225px;
-  top: -15px;
+  left: 81%;
+  top: 20px;
+  fill: #3dc644;
 }
 
 .rates__feature-status--off {
-  position: relative;
-}
-
-.rates__feature-status--off::after {
   position: absolute;
-  content: "";
-  background: url("/img/icon-no.svg") no-repeat;
-  width: 27px;
-  height: 28px;
-  left: 245px;
-  top: -15px;
+  left: 81%;
+  top: 20px;
+  fill: #f79978;
 }
 
 
@@ -86,6 +73,7 @@ tr:nth-of-type(n+1) .rates__item:nth-child(3) .rates__feature {
   padding-bottom: 20px;
   border: 4px solid #f2f2f2;
   background: white;
+  position: relative;
 }
 
 .rates__feature {
@@ -144,14 +132,14 @@ tr:nth-of-type(n+1) .rates__item:nth-child(3) .rates__feature {
     padding-right: 0;
   }
 
-  .rates__feature-status--on::after {
-    left: 50px;
-    top: -10px;
+  .rates__feature-status--on {
+    left: 42%;
+    top: 15px;
   }
 
-  .rates__feature-status--off::after {
-    left: 50px;
-    top: -15px;
+  .rates__feature-status--off {
+    left: 42%;
+    top: 15px;
   }
 
   .rates__header {
@@ -212,13 +200,5 @@ tr:nth-of-type(n+1) .rates__item:nth-child(3) .rates__feature {
 
   tr:nth-of-type(n+1) .rates__item:nth-child(1) .rates__feature {
     @include headline(18px, 30px);
-  }
-
-  .rates__feature-status--on::after {
-    left: 80px;
-  }
-
-  .rates__feature-status--off::after {
-    left: 80px;
   }
 }

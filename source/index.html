@@ -6,22 +6,28 @@
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="index">
   <header class="main-header">
-    <div class="main-header__wrapper">
+    <div class="main-header__wrapper main-header__wrapper--closed main-header__wrapper--nojs">
       <div class="main-header__heading">
-        <picture class="main-header__picture">
-          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-          <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Пинк">
-        </picture>
+        <a class="main-header__picture-link" href = "index.html">
+        <svg class="main-header__picture main-header__picture--mobile" width="74.426px" height="22.859px">
+          <use xlink:href="/img/sprite/sprite.svg#icon-white-mobile"></use>
+        </svg>
+        <svg class="main-header__picture main-header__picture--tablet" width="146.3px" height="40.375px">
+          <use xlink:href="/img/sprite/sprite.svg#icon-white-tablet"></use>
+        </svg>
+        <svg class="main-header__picture main-header__picture--desktop" width="148" height="40">
+          <use xlink:href="/img/sprite/sprite.svg#icon-white-desktop"></use>
+        </svg>
+        </a>
         <button class="main-header__toggle"></button>
       </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+            <li class="site-list__item">
+              <a class="site-link__active">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="photo.html">Фотографии</a>
@@ -42,48 +48,64 @@
         <section class="intro">
           <div class="intro__wrapper">
             <div class="intro__picture picture">
-              <img class="picture__index" src="img/bg-back-mobile@1x.jpg" width="320" height="462" alt="Здание">
-              <h1 class="picture__slogan">Взгляните на жизнь иначе!</h1>
-            </div>
+              <div class="picture__index"></div>
+                <h1 class="picture__slogan">Взгляните на&nbsp;жизнь иначе!</h1>
             <div class="picture__hand"></div>
             <div class="intro__download download-app">
               <a class="download-app__btn" href="#">Скачать приложение</a>
               <ul class="download-app__mobile-list mobile-list">
                 <li class="mobile-list__item">
-                  <a class="mobile-list__ios"><img src="img/logo-apple.svg" alt="Яблоко">IOS</a>
+                  <a class="mobile-list__ios">
+                    <svg  width="47px" height="56px">
+                      <use xlink:href="/img/sprite/sprite.svg#logo-apple"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="mobile-list__item">
-                  <a class="mobile-list__android"><img src="img/logo-android.svg" alt="Андроид">Android</a>
+                  <a class="mobile-list__android">
+                    <svg  width="43px" height="47px">
+                      <use xlink:href="/img/sprite/sprite.svg#logo-android"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="mobile-list__item">
-                  <a class="mobile-list__window"><img src="img/logo-microsoft.svg" alt="Виндоус">Window</a>
+                  <a class="mobile-list__window">
+                    <svg width="44px" height="41px">
+                      <use xlink:href="/img/sprite/sprite.svg#logo-microsoft"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-              <p class="download-app__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+              <p class="download-app__content">Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X, Windows&nbsp;8</p>
             </div>
+          </div>
           </div>
       </section>
       <section class="advantages">
+        <svg class="bg-triangle-white" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
+              <polygon fill="white" points="1200,0 0,0 0,94.074 "/>
+        </svg>
         <div class="advantages__suggestion">
           <div class="advantages__slogan">
-            <h2 class="advantages__question">Устали от серости мегаполиса?<br>Нам есть, что вам<br>предложить!</h2>
+            <h2 class="advantages__question">Устали от cерости мегаполиса?</h2>
+            <h2 class="advantages__question advantages__question--suggestion">Нам есть что вам предложить!</h2>
           </div>
         </div>
         <div class="advantages__items">
           <ul class="advantages__list list-benefits">
             <li class="list-benefits__item">
               <h3 class="list-benefits__title">Поднимает настроение</h3>
-              <p class="list-benefits__description">Приложение позволит вам победить осеннюю хандру и деперессию
-                буквально в несколько кликов!</p>
+              <p class="list-benefits__description">Приложение позволит вам победить осеннюю хандру и&nbsp; депрессию
+                буквально в&nbsp;несколько кликов!</p>
             </li>
             <li class="list-benefits__item">
               <h3 class="list-benefits__title">Меняет мир вокруг</h3>
-              <p class="list-benefits__description">Сделайте снимок и украсьте его смайликом или текстовой подписью,
+              <p class="list-benefits__description">Сделайте снимок и&nbsp;украсьте его смайликом или текстовой подписью,
                 чтобы усилить эффект</p>
             </li>
             <li class="list-benefits__item">
               <h3 class="list-benefits__title">Заводит новых друзей</h3>
-              <p class="list-benefits__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и
+              <p class="list-benefits__description">Ставьте лайки, комментируте, делитесь фотографиями с&nbsp;друзьями и&nbsp;
                 заводите новых</p>
             </li>
           </ul>
@@ -98,9 +120,9 @@
             <text x="95px" y="225px" font-size="96px" fill ="#d22856">24</text>
           </svg>
           <div class="effects__text-block">
-            <h2 class="effects__heading">Эффект на 24 часа!</h2>
-            <p class="effects__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-            <a class="effects__link">Узнать больше об исследовании</a>
+            <h2 class="effects__heading">Эффект&nbsp;на&nbsp;24 часа!</h2>
+            <p class="effects__text">Британские ученые провели исследования и&nbsp;доказали, что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
+            <a class="effects__link">Узнать больше об&nbsp;исследовании</a>
         </div>
         </div>
       </section>
@@ -120,8 +142,16 @@
             <a class="slider__toggle" type="button">3</a>
           </p>
           <p class="reviews__toggles-desktop">
-            <a class="slider__left" type="button"></a>
-            <a class="slider__right" type="button"></a>
+            <a class="slider__left-link">
+              <svg class="slider__left" width="21px" height="42">
+                <use xlink:href="/img/sprite/sprite.svg#icon-left"></use>
+              </svg>
+            </a>
+            <a class="slider__right-link">
+              <svg class="slider__right" width="21px" height="42">
+                <use xlink:href="/img/sprite/sprite.svg#icon-right"></use>
+              </svg>
+            </a>
           </p>
         </div>
       </section>
@@ -153,15 +183,21 @@
                   </td>
                   <td class="rates__item">
                     <span class="rates__feature  rates__feature--name">Розовый фильтр</span>
-                    <span class="rates__feature-status  rates__feature-status--on">Включено</span>
+                    <svg class="rates__feature-status  rates__feature-status--on" width="31px" height="21px">
+                      <use xlink:href="/img/sprite/sprite.svg#icon-yes"></use>
+                    </svg>
                   </td>
                   <td class="rates__item">
                     <span class="rates__feature  rates__feature--name">Розовый фильтр</span>
-                    <span class="rates__feature-status  rates__feature-status--on">Включено</span>
+                    <svg class="rates__feature-status  rates__feature-status--on" width="31px" height="21px">
+                      <use xlink:href="/img/sprite/sprite.svg#icon-yes"></use>
+                    </svg>
                   </td>
                   <td class="rates__item">
                     <span class="rates__feature  rates__feature--name">Розовый фильтр</span>
-                    <span class="rates__feature-status  rates__feature-status--on">Включено</span>
+                    <svg class="rates__feature-status  rates__feature-status--on" width="31px" height="21px">
+                      <use xlink:href="/img/sprite/sprite.svg#icon-yes"></use>
+                    </svg>
                   </td>
                 </tr>
                 <tr>
@@ -170,15 +206,21 @@
                   </td>
                   <td class="rates__item">
                     <span class="rates__feature  rates__feature--name">Смайлики</span>
-                    <span class="rates__feature-status  rates__feature-status--off">Не включено</span>
+                    <svg class="rates__feature-status  rates__feature-status--off" width="27px" height="26px">
+                      <use xlink:href="/img/sprite/sprite.svg#icon-no"></use>
+                    </svg>
                   </td>
                   <td class="rates__item">
                     <span class="rates__feature  rates__feature--name-smile">Смайлики</span>
-                    <span class="rates__feature-status  rates__feature-status--on">Включено</span>
+                    <svg class="rates__feature-status  rates__feature-status--on" width="31px" height="21px">
+                      <use xlink:href="/img/sprite/sprite.svg#icon-yes"></use>
+                    </svg>
                   </td>
                   <td class="rates__item">
                     <span class="rates__feature  rates__feature--name">Смайлики</span>
-                    <span class="rates__feature-status  rates__feature-status--on">Включено</span>
+                    <svg class="rates__feature-status  rates__feature-status--on" width="33px" height="24px">
+                      <use xlink:href="/img/sprite/sprite.svg#icon-yes"></use>
+                    </svg>
                   </td>
                 </tr>
                 <tr>
@@ -187,15 +229,20 @@
                   </td>
                   <td class="rates__item">
                     <span class="rates__feature  rates__feature--name">Комментарии</span>
-                    <span class="rates__feature-status  rates__feature-status--off">Не включено</span>
+                    <svg class="rates__feature-status  rates__feature-status--off" width="27px" height="26px">
+                      <use xlink:href="/img/sprite/sprite.svg#icon-no"></use>
+                    </svg>
+                  <td class="rates__item">
+                    <span class="rates__feature  rates__feature--name">Комментарии</span>
+                    <svg class="rates__feature-status  rates__feature-status--off" width="27px" height="26px">
+                      <use xlink:href="/img/sprite/sprite.svg#icon-no"></use>
+                    </svg>
                   </td>
                   <td class="rates__item">
                     <span class="rates__feature  rates__feature--name">Комментарии</span>
-                    <span class="rates__feature-status  rates__feature-status--off">Не включено</span>
-                  </td>
-                  <td class="rates__item">
-                    <span class="rates__feature  rates__feature--name">Комментарии</span>
-                    <span class="rates__feature-status  rates__feature-status--on">Включено</span>
+                    <svg class="rates__feature-status  rates__feature-status--on" width="31px" height="21px">
+                      <use xlink:href="/img/sprite/sprite.svg#icon-yes"></use>
+                    </svg>
                   </td>
                 </tr>
               </table>
@@ -209,7 +256,7 @@
         </section>
         <section>
           <div class="information">
-            <h3 class="information__slogan">Остались вопросы?<br>Звоните свяжитесь с нами</h3>
+            <h3 class="information__slogan">Остались вопросы? Звоните свяжитесь с&nbsp;нами</h3>
             <div class="information__contacts contacts">
               <div class="contacts__block">
                 <p class="contacts__texte">
@@ -231,42 +278,45 @@
               </div>
             </div>
           </div>
-          <div class="footer__map"></div>
+          <div class="footer__map">
+            <svg class="triangle-white" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
+              <polygon fill="white" points="297.64,61.905 0,0 595.28,0 "/>
+            </svg>
+            <iframe class="footer__map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A386e49b636b4cca9b652a360c495773683621c95856c52c9daa2de54206351b3&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
         </section>
       </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer__index--mobile">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
-          <picture class="footer__picture">
-            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-            <img class="main-header__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Пинк">
-          </picture>
+          <svg class="footer__picture footer__picture--mobile" width="147px" height="40px">
+            <use xlink:href="/img/sprite/sprite.svg#logo-footer-mobile"></use>
+          </svg>
+          <svg class="footer__picture footer__picture--desktop" width="147px" height="40px">
+            <use xlink:href="/img/sprite/sprite.svg#logo-footer-desktop"></use>
+          </svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-                  <g id="W6EeEF_1_">
-                    <g>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
-                    </g>
-                  </g>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
-                  <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+                <svg width="18px" height="14px">
+                  <use xlink:href="/img/sprite/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
-                  <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+                <svg width="9px" height="18px">
+                  <use xlink:href="/img/sprite/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">
+                <svg width="15px" height="13px">
+                  <use xlink:href="/img/sprite/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
             </li>
@@ -275,10 +325,13 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
           <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+            <svg width="27px" height="14px">
+            <use xlink:href="/img/sprite/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>
     </footer>
+  <script src="js/menu-nav.js"></script>
   </body>
 </html>

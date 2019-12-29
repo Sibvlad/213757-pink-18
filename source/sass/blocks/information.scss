@@ -23,8 +23,18 @@
 
 .contacts__info {
   @include headline(24px, 24px);
-  color: red;
   display: block;
+  color: #d22856;
+}
+
+.contacts__info--link {
+  &:hover {
+    color: #283645;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

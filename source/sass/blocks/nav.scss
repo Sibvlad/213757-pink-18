@@ -3,42 +3,41 @@
   width: 100%;
 }
 
-.main-header__heading {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-}
-
 .main-header__picture {
-  margin-left: 6%;
+  margin-left: 20px;
   margin-top: 22px;
   margin-bottom: 25px;
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
 }
 
 .main-header__toggle {
-  @include size(24px, 23px);
-  margin: 6%;
-  background-color: #1d2632;
-  border: 0;
+  @include size(50px, 24px);
+  @include position-absolute;
+  background: transparent;
+  border-color: transparent;
+  top: 20px;
+  right: 20px;
+  position: relative;
 }
 
-.main-header__toggle::after,
-.main-header__toggle::before {
+.main-header__wrapper--opened .main-header__toggle::after,
+.main-header__wrapper--opened .main-header__toggle::before {
   @include position-absolute;
-  top: 30px;
-  left: 86%;
   width: 24px;
   height: 5px;
   background-color: #d0d0d0;
   border-radius: 1px;
 }
 
-.main-header__toggle::after {
+.main-header__wrapper--opened .main-header__toggle::after {
   transform: rotate(45deg);
 }
 
-.main-header__toggle::before {
+.main-header__wrapper--opened .main-header__toggle::before {
   transform: rotate(-45deg);
 }
 
@@ -72,6 +71,62 @@
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-header__heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 66px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 50, 50, 0.3);
+    width: 100%;
+  }
+
+  .main-header__wrapper--opened .main-header__heading {
+    background-color: #1d2632;
+  }
+
+  .main-header__wrapper--closed .main-header__toggle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+
+    background-color: #ffffff;
+    box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+  }
+
+  .main-header__wrapper--closed .site-list__item {
+    display: none;
+  }
+
+  .main-header__wrapper--opened .site-list__item {
+    display: block;
+  }
+
+  .main-header__wrapper--opened .main-nav__list {
+    position: absolute;
+    top: 66px;
+    right: 0;
+    width: 100%;
+    z-index: 110;
+    background-color: #1d2632;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -81,18 +136,36 @@
   }
 
   .main-header__heading {
-    height: 109px;
+    height: 110px;
   }
 
   .main-header__picture {
     margin-top: 27px;
     margin-bottom: 42px;
+    display: block;
+
+    fill: white;
+
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
+
+    &:hover {
+      fill: #d22856;
+    }
   }
 
-  .main-header__toggle::after,
-  .main-header__toggle::before {
-    left: 92%;
-    top: 50px;
+  .main-header__picture:active {
+    fill: #e5e5e5;
+  }
+
+  .main-header__toggle {
+    top: 44px;
+  }
+
+  .main-header__wrapper--opened .main-nav__list {
+    top: 110px;
   }
 }
 
@@ -100,6 +173,7 @@
   .main-header {
     position: absolute;
     background-color: rgba(0, 50, 50, 0.3);
+    z-index: 15;
   }
 
   .main-header__wrapper {
@@ -113,9 +187,15 @@
 
 
   .main-header__picture {
-    margin-top: 27px;
+    margin-top: 30px;
     margin-bottom: 42px;
     margin-left: 0;
+    display: block;
+
+    &--tablet,
+    &--mobile {
+      display: none;
+    }
   }
 
   .main-header__toggle {
@@ -134,27 +214,34 @@
   }
 
   .site-list__item a {
-    padding: 40px 40px;
+    padding: 40px 0;
+    margin-left: 40px;
+    margin-right: 40px;
 
     &:hover {
       color: #d22856;
     }
+
+    &:active {
+      color: #e5e5e5;
+    }
   }
 
   .site-list__item:last-child a {
-    padding-right: 0;
+    margin-right: 0;
   }
 
-  .site-list__item--active {
+  .site-link__active {
     position: relative;
   }
 
-  .site-list__item--active::before {
+  .site-link__active::before {
     position: absolute;
     content: "";
-    bottom: 0;
-    height: 5px;
+    bottom: 30px;
+    height: 2px;
     width: 100%;
+    left: 0;
     background: white;
   }
 }
