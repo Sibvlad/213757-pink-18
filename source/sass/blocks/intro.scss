@@ -2,19 +2,21 @@
   position: relative;
 }
 
-
-.intro__picture {
-  background-color: #1d2632;
-}
-
 .picture__index {
-  @include size(100%, 400px);
+  @include size(100%, 536px);
+  background: url("/img/bg-back-mobile@1x.jpg") no-repeat;
   background-position: center;
+  background-size: 100%;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("/img/bg-back-mobile@1x.jpg 2x");
+    background-size: 100% auto;
+  }
 }
 
 .picture__slogan {
   @include headline(24px, 32px);
-  @include intro-text(20px, 20%);
+  @include intro-text(95px, 20%);
   right: 20%;
 }
 
@@ -30,7 +32,7 @@
   background: url("/img/iphone-hand-mobile@1x.png") no-repeat;
   position: absolute;
   content: "";
-  top: 115px;
+  top: 180px;
   width: 100%;
   height: 100%;
   left: 0;
@@ -41,12 +43,10 @@
   }
 }
 
-
 .download-app {
   text-align: center;
   color: $slogan-color;
 }
-
 
 .download-app__btn {
   @include headline(17px, 17px);
@@ -56,6 +56,15 @@
   padding: 10px;
   border: solid 4px $slogan-color;
   display: block;
+
+  &:hover {
+    color: #d22856;
+    background: $slogan-color;
+  }
+
+  &:active {
+    color: #f1becc;
+  }
 }
 
 .download-app__content {
@@ -70,9 +79,8 @@
 }
 
 .mobile-list__item {
-  @include size(50px, 30px);
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 25px;
 }
 
 .intro__background {
@@ -89,8 +97,9 @@
 
 .intro__index {
   @include headline(24px, 30px);
-  position: absolute;
-  top: 350px;
+  @include position-absolute;
+  font-weight: 400;
+  top: 101px;
   color: white;
   text-align: center;
   width: 100%;
@@ -99,7 +108,7 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    @include size(100%, 620px);
+    @include size(100%, 739px);
     background-image: url("/img/bg-back-tablet@1x.jpg");
     background-position: center;
 
@@ -110,9 +119,11 @@
   }
 
   .intro__wrapper {
-    border-top: 1px solid transparent;
+    padding-top: 1px;
     width: auto;
     max-width: 940px;
+    background: 0;
+    margin: 0 auto;
   }
 
   .picture__index {
@@ -121,12 +132,12 @@
 
   .picture__slogan {
     @include headline(40px, 45px);
-    @include intro-text(100px, 7%);
+    @include intro-text(210px, 7%);
     width: 250px;
   }
 
   .intro__download {
-    margin-top: 267px;
+    margin-top: 377px;
     margin-left: 20px;
     width: 300px;
     padding-left: 0;
@@ -139,7 +150,7 @@
     background: url("/img/iphone-hand-tablet@1x.png") no-repeat;
     position: absolute;
     content: "";
-    top: 83px;
+    top: 193px;
     width: 100%;
     height: 100%;
     left: -15px;
@@ -157,7 +168,7 @@
   }
 
   .intro__background {
-    @include size(100%, 333px);
+    @include size(100%, 443px);
     background: url("/img/bg-back-tablet@1x.jpg") no-repeat;
     background-position: center;
 
@@ -169,7 +180,7 @@
 
   .intro__index {
     @include headline(50px, 60px);
-    top: 400px;
+    top: 140px;
   }
 }
 
@@ -179,14 +190,9 @@
     background: url("/img/bg-back-desktop@1x.jpg") no-repeat;
   }
 
-  .intro__wrapper {
-    width: 80%;
-    margin: 0 auto;
-  }
-
   .picture__slogan {
     @include headline(50px, 55px);
-    margin-top: 110px;
+    @include intro-text(190px, 7%);
     width: 250px;
     left: 3%;
   }

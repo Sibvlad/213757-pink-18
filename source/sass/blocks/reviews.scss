@@ -26,6 +26,14 @@
   height: 6px;
   font-size: 0;
   margin-right: 10px;
+
+  &:hover {
+    background: #7e868f;
+  }
+
+  &:active {
+    background: #e5e5e5;
+  }
 }
 
 .slider__toggle-active {
@@ -37,15 +45,21 @@
   display: none;
 }
 
-.footer__map {
-  background: url("/img/bg-map-mobile@1x.png") no-repeat;
-  background-size: 100%;
-  height: 280px;
+.reviews__toggles-desktop {
+  display: none;
+}
 
-  @media (min-resolution: $retina-dppx) {
-    background-image: url("/img/bg-map-mobile@2x.jpg 2x");
-    background-size: 100% auto;
-  }
+.footer__map {
+  height: 280px;
+  position: relative;
+}
+
+.triangle-white {
+  @include size(100%, auto);
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -77,16 +91,8 @@
   }
 
   .footer__map {
-    background: url("/img/bg-map-tablet@1x.jpg") no-repeat;
-    width: 100%;
     height: 370px;
     margin: 0 auto;
-    background-size: 100%;
-
-    @media (min-resolution: $retina-dppx) {
-      background-image: url("/img/bg-map-tablet@2x.jpg 2x");
-      background-size: 100% auto;
-    }
   }
 }
 
@@ -119,11 +125,6 @@
     height: 500px;
     margin: 0 auto;
     background-size: 100%;
-
-    @media (min-resolution: $retina-dppx) {
-      background-image: url("/img/bg-map-desktop@2x.jpg 2x");
-      background-size: 100% auto;
-    }
   }
 
   .reviews__blockquote {
@@ -135,21 +136,34 @@
     left: 430px;
   }
 
-  .slider__left {
+  .reviews__toggles-desktop {
+    display: block;
+  }
+
+  .slider__left,
+  .slider__right {
     @include position-absolute;
-    background: url("/img/icon-review-arrow-left.svg") no-repeat;
-    width: 21.706px;
-    height: 41.719px;
     top: 230px;
+
+    fill: #e5e5e5;
+
+    &:hover {
+      fill: #969da4;
+    }
+
+    &:active {
+      fill: #e9ebec;
+    }
+  }
+
+  .slider__left {
     left: 0;
   }
 
   .slider__right {
     @include position-absolute;
-    background: url("/img/icon-review-arrow-right.svg") no-repeat;
-    width: 21.706px;
-    height: 41.719px;
     top: 230px;
     right: 0;
+    fill: #e5e5e5;
   }
 }

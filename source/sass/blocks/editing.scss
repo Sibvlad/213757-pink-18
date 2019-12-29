@@ -21,7 +21,35 @@
   color: #d22856;
   margin: 0 auto;
   margin-bottom: 15px;
+  background: transparent;
 }
+
+.photo-editing__btn--active {
+  &:hover {
+    color: $slogan-color;
+    background: #d22856;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.photo-editing__btn--disabled {
+  color: rgba(40, 54, 69, 0.1);
+  border-color: rgba(40, 54, 69, 0.1);
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    background: rgba(40, 54, 69, 0.3);
+    color: $slogan-color;
+  }
+}
+
 
 .toolbox__gif {
   width: 48%;
@@ -33,16 +61,20 @@
 }
 
 .toolbox__contrast {
-  padding-top: 10px;
   fill: #b5b9be;
+  padding-top: 5px;
 }
 
-.toolbox__crop {
-  fill: #d22856;
-}
-
-.toolbox__fill {
+.toolbox__picture {
   fill: #b5b9be;
+
+  &:hover {
+    fill: #8d949b;
+  }
+
+  &:active {
+    fill: #d22856;
+  }
 }
 
 .toolbox__range-controls {
@@ -77,6 +109,10 @@
   border: 2px solid #d22856;
   border-radius: 50%;
   background: #f1f1f1;
+
+  &:active {
+    background: #d22856;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -116,13 +152,21 @@
     width: 6%;
     position: absolute;
     justify-content: space-between;
-    height: 169px;
+    height: 165px;
     top: -40px;
     left: -10px;
   }
 
-  .toolbox__picture {
-    @include size(23px, 23px);
+  .toolbox__contrast {
+    @include size(16px, 16px);
+  }
+
+  .toolbox__crop {
+    @include size(22px, 22px);
+  }
+
+  .toolbox__fill {
+    @include size(24px, 22px);
   }
 
   .toolbox__range-controls {
@@ -166,7 +210,7 @@
 
 @media (min-width: $desktop-width) {
   .photo-editing__wrapper {
-    width: 780px;
+    width: 775px;
     padding-left: 80px;
     padding-right: 90px;
     padding-top: 50px;
@@ -186,13 +230,9 @@
   }
 
   .toolbox__gif {
-    height: 190px;
+    height: 180px;
     top: -50px;
     left: -70px;
-  }
-
-  .toolbox__picture {
-    @include size(49px, 45px);
   }
 
   .photo-editing__btn {
@@ -208,5 +248,18 @@
       left: 150px;
       top: 350px;
     }
+  }
+
+  .toolbox__contrast {
+    @include size(32px, 32px);
+    padding-left: 5px;
+  }
+
+  .toolbox__crop {
+    @include size(44px, 44px);
+  }
+
+  .toolbox__fill {
+    @include size(48px, 43px);
   }
 }
