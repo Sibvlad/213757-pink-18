@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="main-header">
       <div class="main-header__wrapper main-header__wrapper--closed main-header__wrapper--nojs">
         <div class="main-header__heading">
           <a href = "index.html">
             <svg class="main-header__picture main-header__picture--mobile" width="74.426px" height="22.859px">
-              <use xlink:href="/img/sprite/sprite.svg#icon-white-mobile"></use>
+              <use xlink:href="#logo-pink-white-mobile"></use>
             </svg>
             <svg class="main-header__picture main-header__picture--tablet" width="146.3px" height="40.375px">
-              <use xlink:href="/img/sprite/sprite.svg#icon-white-tablet"></use>
+              <use xlink:href="#logo-pink-white-tablet"></use>
             </svg>
             <svg class="main-header__picture main-header__picture--desktop" width="148" height="40">
-              <use xlink:href="/img/sprite/sprite.svg#icon-white-desktop"></use>
+              <use xlink:href="#logo-pink-white-desktop"></use>
             </svg>
           </a>
           <button class="main-header__toggle"></button>
@@ -133,10 +137,10 @@
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
           <svg class="footer__picture footer__picture--mobile" width="147px" height="40px">
-            <use xlink:href="/img/sprite/sprite.svg#logo-footer-mobile"></use>
+            <use xlink:href="#logo-pink-blue-mobile"></use>
           </svg>
           <svg class="footer__picture footer__picture--desktop" width="147px" height="40px">
-            <use xlink:href="/img/sprite/sprite.svg#logo-footer-desktop"></use>
+            <use xlink:href="#logo-pink-blue-desktop"></use>
           </svg>
         </a>
         <div class="page-footer__social social">
@@ -144,21 +148,21 @@
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">
                 <svg width="18px" height="14px">
-                  <use xlink:href="/img/sprite/sprite.svg#icon-twitter"></use>
+                  <use xlink:href="#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
                 <svg width="9px" height="18px">
-                  <use xlink:href="/img/sprite/sprite.svg#icon-facebook"></use>
+                  <use xlink:href="#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="#">
                 <svg width="15px" height="13px">
-                  <use xlink:href="/img/sprite/sprite.svg#icon-youtube"></use>
+                  <use xlink:href="#icon-youtube"></use>
                 </svg>
               </a>
             </li>
@@ -168,7 +172,7 @@
           <b class="copyright__text">Разработано:</b>
           <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27px" height="14px">
-              <use xlink:href="/img/sprite/sprite.svg#htmlacademy"></use>
+              <use xlink:href="#htmlacademy"></use>
             </svg>
           </a>
         </div>
