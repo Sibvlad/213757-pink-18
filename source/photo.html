@@ -33,8 +33,8 @@
               <li class="site-list__item ">
                 <a href="index.html">Главная</a>
               </li>
-              <li class="site-list__item">
-                <a class="site-link__active">Фотографии</a>
+              <li class="site-list__item site-list__item--active">
+                <a>Фотографии</a>
               </li>
               <li class="site-list__item">
                 <a href="form.html">Конкурс</a>
@@ -50,8 +50,8 @@
     <main>
       <div class="content-photo">
         <div class="content-photo__intro intro-photo">
-          <div class="intro__background"></div>
-          <h1 class="intro__index">Фотографии<br>пользователей</h1>
+          <div class="intro-photo__background"></div>
+          <h1 class="intro-photo__index">Фотографии<br>пользователей</h1>
         </div>
         <div class="content-photo__slogan slogan">
           <p class="slogan__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
@@ -66,12 +66,12 @@
 
                 <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="photo__image-main" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография дня">
+                <img class="panorama__image-main" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография дня">
               </picture>
               <span class="panorama__inscription">Панорама дня</span>
             </div>
             <div class="item-photo__comment comment comment-main">
-              <p class="comment__name">Анна<span class="comment__date"> (5 минут назад)</span></p>
+              <h3 class="comment__name">Анна<span class="comment__date"> (5 минут назад)</span></h3>
               <p class="comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
               <div class="comment__block-like like">
                 <svg class="like__heart" width="13px" height="12px">
@@ -90,10 +90,10 @@
 
               <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-              <img class="photo__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Машина">
+              <img class="item-photo__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Машина">
             </picture>
             <div class="item-photo__comment comment">
-              <p class="comment__name">Левон<span class="comment__date"> (5 часов назад)</span></p>
+              <h3 class="comment__name">Левон<span class="comment__date"> (5 часов назад)</span></h3>
               <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <div class="comment__block-like like">
                 <svg class="like__heart" width="13px" height="12px">
@@ -112,10 +112,10 @@
 
               <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-              <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабаны">
+              <img class="item-photo__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабаны">
             </picture>
             <div class="item-photo__comment comment">
-              <p class="comment__name">Антон<span class="comment__date"> (15 часов назад)</span></p>
+              <h3 class="comment__name">Антон<span class="comment__date"> (15 часов назад)</span></h3>
               <p class="comment__text">Соседи будут рады!.</p>
               <div class="comment__block-like like">
                 <svg class="like__heart" width="13px" height="12px">
@@ -133,16 +133,16 @@
 
               <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-              <img class="photo__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Окно">
+              <img class="item-photo__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Окно">
             </picture>
             <div class="item-photo__comment comment">
-              <p class="comment__name">Антон<span class="comment__date"> (15 часов назад)</span></p>
-              <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <h3 class="comment__name">Борис<span class="comment__date"> (20 часов назад)</span></h3>
+              <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="comment__block-like like">
                 <svg class="like__heart" width="13px" height="12px">
                   <use xlink:href="/img/sprite/sprite.svg#icon-heart"></use>
                 </svg>
-                <span class="like__count">Нравится: 356</span>
+                <span class="like__count">Нравится: 215</span>
               </div>
             </div>
           </article>
@@ -154,16 +154,16 @@
 
                 <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-                <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Окно">
+                <img class="item-photo__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Окно">
               </picture>
             <div class="item-photo__comment comment">
-              <p class="comment__name">Борис<span class="comment__date"> (20 часов назад)</span></p>
-              <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <h3 class="comment__name">Сергей<span class="comment__date"> (25 часов назад)</span></h3>
+              <p class="comment__text">Самая кубанская в мире!</p>
               <div class="comment__block-like like">
                 <svg class="like__heart" width="13px" height="12px">
                   <use xlink:href="/img/sprite/sprite.svg#icon-heart"></use>
                 </svg>
-                <span class="like__count">Нравится: 215</span>
+                <span class="like__count">Нравится: 4</span>
               </div>
             </div>
           </article>
@@ -175,10 +175,10 @@
 
               <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-              <img class="photo__image" src="img/photo-pov-mobile@1x.jpg"  srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Окно">
+              <img class="item-photo__image" src="img/photo-pov-mobile@1x.jpg"  srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Окно">
             </picture>
             <div class="item-photo__comment comment">
-              <p class="comment__name">Максим<span class="comment__date"> (40 часов назад)</span></p>
+              <h3 class="comment__name">Максим<span class="comment__date"> (40 часов назад)</span></h3>
               <p class="comment__text">Где снег-то?</p>
               <div class="comment__block-like like">
                 <svg class="like__heart" width="13px" height="12px">
@@ -196,10 +196,10 @@
 
               <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-              <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Окно">
+              <img class="item-photo__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Окно">
             </picture>
             <div class="item-photo__comment comment">
-              <p class="comment__name">Надежда <span class="comment__date"> (40 часов назад)</span></p>
+              <h3 class="comment__name">Надежда <span class="comment__date"> (40 часов назад)</span></h3>
               <p class="comment__text">Всем GM и взаимные лайки!</p>
               <div class="comment__block-like like">
                 <svg class="like__heart" width="13px" height="12px">
@@ -210,11 +210,12 @@
             </div>
           </article>
           <div class="content-photo__last-slogan">
-            <h3 class="content-photo__last-slogan content-photo__last-slogan--texte">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h3>
+            <h3 class="content-photo__last-slogan content-photo__last-slogan--texte">Затмите их всех! Выкладывайте&nbsp;все,&nbsp;что накопилось в телефоне!</h3>
           </div>
           </div>
         </section>
         <section class="photo-editing">
+          <h2>Фоторедактор</h2>
           <div class="photo-editing__wrapper">
             <form class="photo-editing__form" action="https://echo.htmlacademy.ru" method="post">
               <div class="photo-editing__picture">
@@ -225,7 +226,7 @@
 
                   <source media="(min-width: 940px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-                  <img class="photo__image-editing" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Дорога">
+                  <img class="photo-editing__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Дорога">
                 </picture>
               </div>
               <div class="photo-editing__toolbox toolbox">
@@ -267,10 +268,10 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
-          <svg class="footer__picture footer__picture--mobile" width="147px" height="40px">
+          <svg class="page-footer__picture page-footer__picture--mobile" width="147px" height="40px">
             <use xlink:href="#logo-pink-blue-mobile"></use>
           </svg>
-          <svg class="footer__picture footer__picture--desktop" width="147px" height="40px">
+          <svg class="page-footer__picture page-footer__picture--desktop" width="147px" height="40px">
             <use xlink:href="#logo-pink-blue-desktop"></use>
           </svg>
         </a>

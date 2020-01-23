@@ -1,27 +1,28 @@
 .slogan {
   @include headline(14px, 18px);
-  padding: 34px 38px;
+  padding: 33px 30px;
   text-align: center;
 }
 
 .slogan__text {
   @include headline(14px, 30px);
+  background: red;
 }
 
 .panorama {
   position: relative;
 }
 
-.photo__image-main {
+.panorama__image-main {
   width: 100%;
 }
 
 .comment-picture__item {
-  width: 86%;
+  width: 87.5%;
   margin: 0 auto;
 }
 
-.photo__image {
+.item-photo__image {
   width: 100%;
 }
 
@@ -33,7 +34,7 @@
   text-transform: uppercase;
   color: $slogan-color;
   background: #d22856;
-  padding: 6px 23px;
+  padding: 6px 21px;
   font-weight: 700;
 }
 
@@ -42,23 +43,26 @@
   margin: 0 auto;
   background: #f2f2f2;
   width: 86%;
-  padding: 7%;
-  margin-bottom: 20px;
-  margin-top: -10px;
+  padding: 21px;
+  padding-top: 18px;
+  padding-left: 6%;
+  margin-bottom: 22px;
+  margin-top: -5px;
 }
 
 .comment-main {
-  width: 72%;
+  width: 76%;
 }
 
 .comment__name {
+  @include headline(14px, 24px);
   @include indentation(0, 0);
   font-weight: 700;
 }
 
 .comment__text {
   @include indentation(0, 0);
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .comment__date {
@@ -76,14 +80,19 @@
 }
 
 .like__count {
+  @include headline(12px, 12px);
   color: #d22856;
-  margin-left: 20px;
+  margin-left: 15px;
+  text-transform: uppercase;
 }
 
 .content-photo__last-slogan {
   @include headline(14px, 30px);
-  padding-top: 14px;
-  padding-bottom: 34px;
+  font-weight: 300;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 2px;
+  padding-bottom: 15px;
   text-align: center;
 }
 
@@ -201,7 +210,7 @@
     background-position: center;
   }
 
-  .photo__image-main {
+  .panorama__image-main {
     min-width: 100%;
     background-size: 100%;
     height: 506px;

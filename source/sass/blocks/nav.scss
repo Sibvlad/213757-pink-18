@@ -19,8 +19,8 @@
   @include position-absolute;
   background: transparent;
   border-color: transparent;
-  top: 20px;
-  right: 20px;
+  top: 19px;
+  right: 22px;
   position: relative;
 }
 
@@ -118,17 +118,17 @@
     height: 4px;
 
     background-color: #ffffff;
-    box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+    box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
   }
 
   .main-header__wrapper--closed .main-header__toggle:hover::before {
     background-color: #d22856;
-    box-shadow: 0 8px 0 0 #d22856, 0 16px 0 0 #d22856;
+    box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
   }
 
   .main-header__wrapper--closed .main-header__toggle:active::before {
     background-color: rgba(210, 40, 86, 0.3);
-    box-shadow: 0 8px 0 0 rgba(210, 40, 86, 0.3), 0 16px 0 0 rgba(210, 40, 86, 0.3);
+    box-shadow: 0 10px 0 0 rgba(210, 40, 86, 0.3), 0 20px 0 0 rgba(210, 40, 86, 0.3);
   }
 
 
@@ -230,14 +230,16 @@
   }
 
   .site-list__item {
-    @include headline(18px, 30px);
+    @include headline(17px, 30px);
+    text-transform: none;
     border: none;
   }
 
   .site-list__item a {
     padding: 40px 0;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 41.5px;
+    margin-right: 41.4px;
+    text-transform: none;
 
     &:hover {
       color: #d22856;
@@ -252,17 +254,17 @@
     margin-right: 0;
   }
 
-  .site-link__active {
+  .site-list__item--active a {
     position: relative;
-  }
 
-  .site-link__active::before {
-    position: absolute;
-    content: "";
-    bottom: 30px;
-    height: 2px;
-    width: 100%;
-    left: 0;
-    background: white;
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 30px;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      background: white;
+    }
   }
 }

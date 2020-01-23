@@ -1,33 +1,39 @@
 .information {
-  padding: 40px 35px;
+  padding: 20px 35px;
   text-align: center;
   position: relative;
 }
 
 .information__slogan {
-  @include headline(24px, 24px);
-  margin-bottom: 40px;
+  @include headline(23px, 28px);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  margin-bottom: 30px;
 }
 
 .contacts__texte {
   @include indentation(0, 0);
-  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
 }
 
-
 .contacts__sub-title {
-  @include headline(18px, 32px);
+  @include headline(19px, 32px);
   font-weight: bold;
 }
 
-
 .contacts__info {
-  @include headline(24px, 24px);
+  @include headline(24px, 32px);
   display: block;
   color: #d22856;
 }
 
 .contacts__info--link {
+  @include headline(23px, 24px);
+  margin-left: 5px;
+  text-decoration: none;
+  margin-bottom: 23px;
+
   &:hover {
     color: #283645;
   }
@@ -39,15 +45,16 @@
 
 @media (min-width: $tablet-width) {
   .information {
-    padding: 50px 70px;
+    padding: 10px 50px;
+    padding-left: 65px;
     width: auto;
     max-width: 940px;
     margin: 0 auto;
   }
 
   .information__slogan {
-    @include headline(40px, 40px);
-    margin-bottom: 55px;
+    @include headline(39px, 44px);
+    margin-bottom: 45px;
   }
 
   .contacts {
@@ -61,26 +68,40 @@
   .contacts__block--address {
     flex-grow: 1;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 25px;
+    background: red;
+  }
+
+  .contacts__info--link {
+    @include headline(24px, 24px);
+    margin-left: 0;
+  }
+
+ .contacts__info--adress {
+    width: 50%;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .information {
-    padding: 70px 35px;
-    width: 960px;
+    padding: 65px 35px;
+    padding-bottom: 0;
+    width: 940px;
     margin: 0 auto;
   }
 
   .contacts__sub-title {
-    margin-bottom: 30px;
+    margin-bottom: 18px;
     display: block;
   }
 
 
   .information__slogan {
-    @include headline(50px, 60px);
-    margin-bottom: 55px;
+    @include headline(49px, 60px);
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 70%;
   }
 
   .contacts__block--address {
@@ -89,10 +110,25 @@
   }
 
   .contacts__block {
-    width: 250px;
+    text-align: center;
+    width: 300px;
   }
 
   .contacts__block:nth-child(2) {
     order: 3;
+  }
+
+  .contacts__info--link {
+    @include headline(23px, 23px);
+    padding-top: 5px;
+  }
+
+  .contacts__texte {
+    text-align: center;
+  }
+
+  .contacts__info--adress {
+    width: 70%;
+    margin: 0 auto;
   }
 }
