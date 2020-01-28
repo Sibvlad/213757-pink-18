@@ -6,6 +6,8 @@
   <title>Title</title>
   <link href="css/style.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
 </head>
   <body>
     <div style="display:none">
@@ -40,7 +42,7 @@
                 <a href="form.html">Конкурс</a>
               </li>
               <li class="site-list__item">
-                <a href="#">HTML Academy</a>
+                <a href="href=https://up.tmlacademy.ru/adaptive/18">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -72,10 +74,10 @@
             </div>
             <div class="item-photo__comment comment comment-main">
               <h3 class="comment__name">Анна<span class="comment__date"> (5 минут назад)</span></h3>
-              <p class="comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+              <p class="comment__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои</p>
               <div class="comment__block-like like">
                 <svg class="like__heart" width="13px" height="12px">
-                  <use xlink:href="/img/sprite/sprite.svg#icon-heart"></use>
+                  <use xlink:href="#icon-heart"></use>
                 </svg>
                 <span class="like__count">Нравится: 215</span>
               </div>
@@ -97,7 +99,7 @@
               <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <div class="comment__block-like like">
                 <svg class="like__heart" width="13px" height="12px">
-                  <use xlink:href="/img/sprite/sprite.svg#icon-heart"></use>
+                  <use xlink:href="#icon-heart"></use>
                 </svg>
                 <span class="like__count">Нравится: 356</span>
               </div>
@@ -119,7 +121,7 @@
               <p class="comment__text">Соседи будут рады!.</p>
               <div class="comment__block-like like">
                 <svg class="like__heart" width="13px" height="12px">
-                  <use xlink:href="/img/sprite/sprite.svg#icon-heart"></use>
+                  <use xlink:href="#icon-heart"></use>
                 </svg>
                 <span class="like__count">Нравится: 666</span>
               </div>
@@ -140,7 +142,7 @@
               <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="comment__block-like like">
                 <svg class="like__heart" width="13px" height="12px">
-                  <use xlink:href="/img/sprite/sprite.svg#icon-heart"></use>
+                  <use xlink:href="#icon-heart"></use>
                 </svg>
                 <span class="like__count">Нравится: 215</span>
               </div>
@@ -161,7 +163,7 @@
               <p class="comment__text">Самая кубанская в мире!</p>
               <div class="comment__block-like like">
                 <svg class="like__heart" width="13px" height="12px">
-                  <use xlink:href="/img/sprite/sprite.svg#icon-heart"></use>
+                  <use xlink:href="#icon-heart"></use>
                 </svg>
                 <span class="like__count">Нравится: 4</span>
               </div>
@@ -182,7 +184,7 @@
               <p class="comment__text">Где снег-то?</p>
               <div class="comment__block-like like">
                 <svg class="like__heart" width="13px" height="12px">
-                  <use xlink:href="/img/sprite/sprite.svg#icon-heart"></use>
+                  <use xlink:href="#icon-heart"></use>
                 </svg>
                 <span class="like__count">Нравится: 150</span>
               </div>
@@ -192,7 +194,7 @@
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp, img/photo-wing-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp, img/photo-wing-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, ./img/photo-wing-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
 
               <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
@@ -203,14 +205,14 @@
               <p class="comment__text">Всем GM и взаимные лайки!</p>
               <div class="comment__block-like like">
                 <svg class="like__heart" width="13px" height="12px">
-                  <use xlink:href="/img/sprite/sprite.svg#icon-heart"></use>
+                  <use xlink:href="#icon-heart"></use>
                 </svg>
                 <span class="like__count">Нравится: 2560</span>
               </div>
             </div>
           </article>
           <div class="content-photo__last-slogan">
-            <h3 class="content-photo__last-slogan content-photo__last-slogan--texte">Затмите их всех! Выкладывайте&nbsp;все,&nbsp;что накопилось в телефоне!</h3>
+            <h3 class="content-photo__last-slogan content-photo__last-slogan--texte">Затмите их всех! Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось в телефоне!</h3>
           </div>
           </div>
         </section>
@@ -231,14 +233,14 @@
               </div>
               <div class="photo-editing__toolbox toolbox">
                 <div class = "toolbox__gif">
-                  <svg class="toolbox__picture toolbox__crop" width="44px" height="44px">
-                    <use xlink:href="/img/sprite/sprite.svg#toolbox__crop"></use>
+                  <svg class="toolbox__picture toolbox__crop">
+                    <use xlink:href="#icon-editor-crop"></use>
                   </svg>
-                  <svg class="toolbox__picture toolbox__fill" width="48px" height="43px">
-                    <use xlink:href="/img/sprite/sprite.svg#toolbox__fill"></use>
+                  <svg class="toolbox__picture toolbox__fill">
+                    <use xlink:href="#icon-editor-fill"></use>
                   </svg>
-                  <svg class="toolbox__picture toolbox__contrast" width="32px" height="32px">
-                    <use xlink:href="/img/sprite/sprite.svg#toolbox__contrast"></use>
+                  <svg class="toolbox__picture toolbox__contrast">
+                    <use xlink:href="#icon-editor-contrast"></use>
                   </svg>
                 </div>
                 <div class="toolbox__range-controls">

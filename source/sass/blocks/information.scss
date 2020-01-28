@@ -6,14 +6,14 @@
 
 .information__slogan {
   @include headline(23px, 28px);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   margin-bottom: 30px;
 }
 
 .contacts__texte {
   @include indentation(0, 0);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   margin-bottom: 10px;
 }
 
@@ -32,7 +32,7 @@
   @include headline(23px, 24px);
   margin-left: 5px;
   text-decoration: none;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 
   &:hover {
     color: #283645;
@@ -46,7 +46,7 @@
 @media (min-width: $tablet-width) {
   .information {
     padding: 10px 50px;
-    padding-left: 65px;
+    padding-top: 8px;
     width: auto;
     max-width: 940px;
     margin: 0 auto;
@@ -64,12 +64,14 @@
     flex-wrap: wrap;
   }
 
+  .contacts__block:nth-child(1) {
+    margin-left: 15px;
+  }
 
   .contacts__block--address {
     flex-grow: 1;
     width: 100%;
-    margin-top: 25px;
-    background: red;
+    margin-top: 23px;
   }
 
   .contacts__info--link {
@@ -77,7 +79,7 @@
     margin-left: 0;
   }
 
- .contacts__info--adress {
+  .contacts__info--adress {
     width: 50%;
     margin: 0 auto;
   }
@@ -107,6 +109,10 @@
   .contacts__block--address {
     margin-top: 0;
     flex-grow: 0;
+  }
+
+  .contacts__block:nth-child(1) {
+    margin-left: 0;
   }
 
   .contacts__block {

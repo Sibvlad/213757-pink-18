@@ -6,6 +6,8 @@
     <title>Title</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
 </head>
   <body>
     <div style="display:none">
@@ -37,10 +39,10 @@
                 <a href="photo.html">Фотографии</a>
               </li>
               <li class="site-list__item site-list__item--active">
-                <a>Конкурс</a>
+                <a href="#">Конкурс</a>
               </li>
               <li class="site-list__item">
-                <a href="#">HTML Academy</a>
+                <a href="href=https://up.htmlacademy.ru/adaptive/18">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -55,23 +57,23 @@
         </div>
       </div>
       <section class="form">
-        <h2 class="form__start">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+        <h2 class="form__start">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже</span></h2>
         <form class="form__competition form-competition" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form-competition__fieldset">
             <ul class="form-competition__list response-options">
               <li class="response-options__item">
-                <label class="response-options__personal-data">Фамилия<input class="response-options__input" type="text" name="name" placeholder="Укажите фамилию*"></label>
+                <label class="response-options__personal-data"><span>Фамилия:</span><input class="response-options__input" type="text" name="name" placeholder="Укажите фамилию*"></label>
               </li>
               <li class="response-options__item">
-                <label class="response-options__personal-data">Имя<input class="response-options__input" type="text" name="baxter" placeholder="Укажите имя*"></label>
+                <label class="response-options__personal-data"><span>Имя:</span><input class="response-options__input" type="text" name="baxter" placeholder="Введите ваше имя*"></label>
               </li>
               <li class="response-options__item">
-                <label class="response-options__personal-data">Отчество<input class="response-options__input response-options__input--last" type="text" name="baxter" placeholder="Ну и отчество тоже*"></label>
+                <label class="response-options__personal-data"><span>Отчество:</span><input class="response-options__input response-options__input--last" type="text" name="baxter" placeholder="Ну и отчество тоже"></label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form-competition__fieldset form-competition__fieldset--checkbox">
-            <div class="form-competition__legend">Ваши безбашенные<br>достижения в путешествии</div>
+            <div class="form-competition__legend">Ваши безбашенные достижения в путешествии</div>
             <ul class="form-competition__list achieving-options">
               <li class="achieving-options__item">
                 <input class="achieving-options__input" type="checkbox" name="achieving-shark" value="shark" id="selfie-shark">
@@ -99,6 +101,7 @@
             </ul>
           </fieldset>
           <fieldset class="form-competition__fieldset second-form">
+            <div class="form-competition__legend">Контактная информация</div>
             <ul class="form-competition__list response-options response-options--second-form">
               <li class="response-options__item">
                 <label class="response-options__personal-data response-options__personal-data--second-form" for="telephone-number">Номер телефона</label><input class="response-options__input response-options__input--second-form" type="text" name="number-telephone" placeholder="Номер пожалуйста" id="telephone-number">
@@ -115,7 +118,7 @@
                 <input class="application-list__input" id="ios" type="radio" name="application-option" value="ios" checked><label class="application-list__response" for="ios">Pink для iOS</label>
               </li>
               <li class="application-list__item">
-                <input class="application-list__input" id="android" type="radio" name="application-option" value="Android"><label class="application-list__response" for="android">Pink для Android</label>
+                <input class="application-list__input" id="android" type="radio" name="application-option"  value="Android"><label class="application-list__response" for="android">Pink на Android</label>
               </li>
               <li class="application-list__item">
                 <input class="application-list__input" id="windows" type="radio" name="application-option" value="Windows"><label class="application-list__response" for="windows">Windows Phone</label>
@@ -128,7 +131,7 @@
           </fieldset>
           <div class="form__btn-block">
             <button class="form__btn" type="submit" value="Отправить форму">Отправить форму</button>
-            <small class="form__legend"><sup>*</sup> — обязательные поля</small>
+            <small class="form__legend"><sup>*</sup> — обязательные<span> для заполнения</span> поля</small>
           </div>
         </form>
       </section>

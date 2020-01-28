@@ -10,7 +10,7 @@
 
 .reviews__author-name {
   @include headline(19px, 30px);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-style: normal;
   margin-bottom: 0;
@@ -18,7 +18,7 @@
 
 .reviews__text {
   @include headline(14px, 30px);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
@@ -103,12 +103,12 @@
   }
 
   .map {
-    height: 370px;
+    height: 374px;
     margin: 0 auto;
   }
 
   .map__iframe {
-    height: 370px;
+    height: 374px;
   }
 }
 
@@ -137,13 +137,13 @@
 
   .map {
     width: 100%;
-    height: 510px;
+    height: 505px;
     margin: 0 auto;
     background-size: 100%;
   }
 
   .map__iframe {
-    height: 510px;
+    height: 505px;
   }
 
   .reviews__blockquote {
@@ -159,11 +159,15 @@
     display: block;
   }
 
+  .slider__left-link,
+  .slider__right-link {
+    font-size: 0;
+  }
+
   .slider__left,
   .slider__right {
     @include position-absolute;
     top: 215px;
-
     fill: #e5e5e5;
 
     &:hover {
@@ -187,7 +191,6 @@
 
   .reviews__text {
     @include headline(18px, 30px);
-    background: red;
     width: 81%;
     margin: 0 auto;
     margin-top: 5px;

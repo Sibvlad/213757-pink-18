@@ -10,8 +10,8 @@
 .page-footer__picture {
   @include size(147px, 40px);
   margin: 0 auto;
-  margin-top: 5px;
-  margin-bottom: 37px;
+  margin-top: 3px;
+  margin-bottom: 35px;
   margin-left: 0;
   fill: #283645;
 
@@ -41,7 +41,7 @@
   font-size: 0;
   vertical-align: top;
   margin-top: 0;
-  margin-bottom: 38px;
+  margin-bottom: 35px;
 }
 
 .social__item {
@@ -67,21 +67,20 @@
 
 .copyright {
   text-align: center;
-  display: block;
+  display: inline-block;
   border-top: 1px solid transparent;
-  background: red;
 }
 
 .copyright__text {
   @include headline(14px, 18px);
   font-weight: 400;
   display: inline-block;
-  vertical-align: 15px;
+  vertical-align: 17px;
   padding-top: 0;
 }
 
 .copyright__link svg {
-  @include size(30px, 35px);
+  @include size(40px, 40px);
   font-size: 0;
   fill: #d22856;
 
@@ -96,6 +95,7 @@
 
 .social__link {
   position: relative;
+  font-size: 0;
 }
 
 .social__link--twitter svg {
@@ -131,7 +131,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 40px 20px;
+    padding: 33px 20px;
   }
 
   .page-footer__picture {
@@ -140,24 +140,28 @@
   }
 
   .social__list {
-    margin-left: -15px;
-    margin-top: 5px;
+    margin-top: 7px;
     margin-bottom: 0;
+    margin-left: -18px;
   }
 
   .copyright {
-    margin-top: 12px;
-  }
-
-  .copyright__link {
-    right: -40px;
-  }
-
-  .copyright__text {
+    display: flex;
+    flex-direction: row;
+    width: 130px;
   }
 
   .copyright__link svg {
     @include size(40px, 40px);
+    margin-top: 15px;
+    margin-left: 8px;
+  }
+
+  .copyright__text {
+    display: block;
+    margin-top: 23px;
+    padding-left: 0;
+    margin-left: 0;
   }
 }
 
@@ -165,6 +169,10 @@
   .page-footer__wrapper {
     margin: 0 auto;
     padding: 70px 0;
+  }
+
+  .page-footer__picture {
+    margin-left: 5px;
   }
 
   .page-footer__picture--desktop {
@@ -179,18 +187,24 @@
     display: none;
   }
 
-  .copyright {
-
-  }
-
   .copyright__text {
     @include headline(18px, 18px);
-    margin-top: 0;
-    background: red;
+    margin-top: 10px;
   }
 
   .social__list {
-    margin-left: 5px;
+    margin-left: 8px;
     width: 100%;
+  }
+
+  .copyright {
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  .copyright__link svg {
+    margin-top: 0;
   }
 }

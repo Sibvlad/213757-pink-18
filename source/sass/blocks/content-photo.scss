@@ -6,7 +6,6 @@
 
 .slogan__text {
   @include headline(14px, 30px);
-  background: red;
 }
 
 .panorama {
@@ -104,25 +103,36 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .slogan {
-    @include headline(18px, 30px);
-    padding: 100px 113px;
+    padding: 75px 100px;
+    padding-bottom: 57px;
     text-align: center;
-    width: 410px;
+    width: 70%;
     margin: 0 auto;
+  }
+
+  .slogan__text {
+    @include headline(18px, 30px);
+    width: 100%;
+  }
+
+  .panorama__image-main {
+    height: 510px;
   }
 
   .panorama__inscription {
     top: 57px;
+    right: 3%;
   }
 
   .comment-main {
-    width: 85%;
+    width: 86%;
     margin-bottom: 50px;
-    padding: 30px;
+    padding: 22px;
+    padding-left: 28px;
+    padding-bottom: 16px;
     position: relative;
     margin-top: -4px;
   }
@@ -134,33 +144,46 @@
   }
 
   .comment-main .like__count {
-    margin-right: 20px;
+    margin-right: 15px;
   }
 
 
   .comment-picture__item {
-    width: 45%;
+    width: 45.3%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .item-photo__image {
+    width: 100%;
+    margin-right: 12px;
+    margin-left: 12px;
   }
 
   .comment:not(.comment-main) {
-    width: 80%;
-    padding: 10%;
+    width: 82%;
+    padding: 9%;
     margin-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 35px;
     height: 96px;
+    margin-left: 12px;
+    margin-right: 12px;
   }
 
   .content-photo__last-slogan {
     @include headline(18px, 30px);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 22px;
+    padding-bottom: 35px;
     margin: 0 auto;
-    width: 380px;
+    width: 80%;
   }
 
   .comment__block-like {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin-top: 15px;
   }
 
   .like__count {
@@ -168,18 +191,27 @@
   }
 
   .like__heart {
-    margin-top: 5px;
+    margin-top: 0;
+    margin-right: 8px;
   }
 
   .comment__text {
     height: 50px;
   }
+
+  .comment__date {
+    @include headline(13px, 13px);
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .content-photo {
+    padding-bottom: 25px;
+  }
+
   .comment-picture__item {
-    width: 31%;
-    margin-right: 20px;
+    width: 32%;
+    margin-right: 10px;
   }
 
   .item-photo:nth-of-type(3),
@@ -189,25 +221,35 @@
 
   .item-photo:nth-of-type(1),
   .item-photo:nth-of-type(4) {
-    margin-left: 0;
+    margin-left: -13px;
   }
 
   .item-photo:nth-of-type(1),
   .item-photo:nth-of-type(2),
   .item-photo:nth-of-type(3) {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .slogan {
-    width: 520px;
+    width: 630px;
     margin: 0 auto;
-    padding: 88px 0;
+    padding-top: 75px;
+    padding-bottom: 72px;
   }
 
   .comment-main {
-    width: 880px;
+    width: 890px;
+    transform: translateX(7px);
     margin-bottom: 50px;
     background-position: center;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .comment-main .like {
+    top: 15px;
+    right: 2.5%;
   }
 
   .panorama__image-main {
@@ -217,12 +259,14 @@
   }
 
   .panorama__inscription {
-    left: 69%;
-    width: 100px;
+    left: 77.5%;
+    width: 98.5px;
+    top: 53px;
   }
 
   .content-photo__last-slogan {
-    padding-top: 40px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 33px;
+    width: 460px;
   }
 }

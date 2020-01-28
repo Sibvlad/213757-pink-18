@@ -22,6 +22,7 @@
   top: 19px;
   right: 22px;
   position: relative;
+  font-size: 0;
 }
 
 .main-header__wrapper--opened .main-header__toggle::after,
@@ -178,7 +179,7 @@
   }
 
   .main-header__picture:active {
-    fill: #e5e5e5;
+    opacity: 0.3;
   }
 
   .main-header__toggle {
@@ -260,7 +261,7 @@
     &::before {
       position: absolute;
       content: "";
-      bottom: 30px;
+      bottom: 35px;
       height: 2px;
       width: 100%;
       left: 0;

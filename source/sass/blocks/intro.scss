@@ -4,17 +4,24 @@
 
 .picture__index {
   @include size(100%, 462px);
-  background: url("../img/bg-back-mobile@1x.jpg") #283645 no-repeat;
+  background: #283645 url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-size: 100%;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg 2x") #283645 no-repeat;
+    background-image: #283645 url("../img/bg-back-mobile@2x.jpg 2x")  no-repeat;
     background-size: 100% 462px;
   }
 }
 
+.mobile-list__item {
+  font-size: 0;
+  display: inline-block;
+  margin-right: 34px;
+}
+
 .picture__slogan {
   @include intro-text(70px, 30px);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 23px;
   font-weight: 300;
   right: 30px;
@@ -52,7 +59,7 @@
 .download-app__btn {
   @include headline(19px, 18px);
   @include border-radius(38px);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
   color: $slogan-color;
   text-decoration: none;
@@ -86,11 +93,6 @@
   font-size: 0;
 }
 
-.mobile-list__item {
-  display: inline-block;
-  margin-right: 34px;
-}
-
 .mobile-list__item:first-child {
   margin-left: -12px;
 }
@@ -105,12 +107,12 @@
 
 .intro-photo__background {
   @include size(100%, 236px);
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background: #283645 url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-position: center;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg 2x") no-repeat;
-    background-size:  100% auto;
+    background-image: #283645 url("../img/bg-back-mobile@2x.jpg 2x") no-repeat;
+    background-size: 100% auto;
   }
 }
 
@@ -127,12 +129,12 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    @include size(100%, 729px);
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    @include size(100%, 728px);
+    background: #283645 url("../img/bg-back-tablet@1x.jpg") no-repeat;
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg 2x") no-repeat;
-      background-size: 100% 729px;
+      background-image: #283645 url("../img/bg-back-tablet@2x.jpg 2x") no-repeat;
+      background-size: 100% 728px;
     }
   }
 
@@ -186,7 +188,7 @@
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png 2x") no-repeat;
-      background-size:  100% auto;
+      background-size: 100% auto;
     }
   }
 
@@ -197,30 +199,30 @@
   }
 
   .intro-photo__background {
-    @include size(100%, 443px);
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    @include size(100%, 440px);
+    background: #283645 url("../img/bg-back-tablet@1x.jpg") no-repeat;
     background-position: center;
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg 2x") no-repeat;
-      background-size: 100% 443px;
+      background-image: #283645 url("../img/bg-back-tablet@2x.jpg 2x") no-repeat;
+      background-size: 100% auto;
     }
   }
 
   .intro-photo__index {
-    @include headline(50px, 60px);
-    top: 140px;
+    @include headline(48px, 60px);
+    font-weight: 200;
+    top: 145px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
     @include size(100%, 853px);
-    background: url("../img/bg-back-desktop@1x.jpg") #283645 no-repeat;
-    background-position: center;
+    background: #283645 url("../img/bg-back-desktop@1x.jpg") no-repeat;
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg 2x") #283645 no-repeat;
+      background-image: #283645 url("../img/bg-back-desktop@2x.jpg 2x") no-repeat;
       background-size: 100% 853px;
     }
   }
@@ -229,7 +231,7 @@
     @include headline(49px, 60px);
     @include intro-text(178px, 7%);
     display: inline;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     width: 250px;
     left: 3%;
@@ -252,17 +254,17 @@
 
   .intro-photo__background {
     @include size(100%, 393px);
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
+    background: #283645 url("../img/bg-back-desktop@1x.jpg") no-repeat;
     background-position: top;
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg 2x") no-repeat;
+      background-image: #283645 url("../img/bg-back-desktop@2x.jpg 2x") no-repeat;
       background-size: 100% 393px;
     }
   }
 
   .intro-photo__index {
-    top: 120px;
+    top: 140px;
   }
 
   .picture__hand {
