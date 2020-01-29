@@ -26,12 +26,12 @@
 }
 
 .advantages__triangle-white {
-  @include size(100%, auto);
+  @include size(100%, 94px);
   position: absolute;
   content: "";
-  top: 220px;
+  top: 185px;
   left: 0;
-  z-index: 10;
+  z-index: 15;
 }
 
 .advantages__items {
@@ -102,7 +102,8 @@
   }
 
   .advantages__triangle-white {
-    top: 240px;
+    top: 220px;
+    z-index: 8;
   }
 
   .advantages__slogan {
@@ -214,7 +215,8 @@
   }
 
   .advantages__triangle-white {
-    top: 325px;
+    top: 320px;
+    width: 100%;
   }
 
   .advantages__items {

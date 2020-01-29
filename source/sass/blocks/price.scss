@@ -8,13 +8,12 @@
 }
 
 .price__triangle-white {
-  @include size(100%, auto);
+  @include size(100%, 94px);
   position: absolute;
   content: "";
-  top: 0;
+  top: 2050px;
   left: 0;
   z-index: 10;
-  background: #f2f2f2;
 }
 
 .rates__table {
@@ -197,6 +196,10 @@ tr:nth-of-type(n+1) .rates__item:nth-child(3) .rates__feature {
   .price .slider__toggles {
     display: none;
   }
+
+  .price__triangle-white {
+    top: 2118px;
+  }
 }
 
 
@@ -236,5 +239,9 @@ tr:nth-of-type(n+1) .rates__item:nth-child(3) .rates__feature {
 
   .rates__feature-status--on {
     transform: translateX(250%) translateY(8px);
+  }
+
+  .price__triangle-white {
+    top: 2665px;
   }
 }

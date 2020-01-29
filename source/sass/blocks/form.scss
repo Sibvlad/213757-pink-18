@@ -95,6 +95,7 @@
 
 .form__btn {
   @include headline(20px, 30px);
+  font-weight: 400;
   display: block;
   padding-top: 15px;
   padding-bottom: 18px;
@@ -105,6 +106,7 @@
   margin-bottom: 38px;
   background: #2aab6d;
   text-transform: uppercase;
+  border-radius: 5px;
 
   &:hover {
     background: #1c9b5e;
@@ -224,6 +226,14 @@
   top: 7px;
 }
 
+.second-form .form-competition__legend {
+  display: none;
+}
+
+.form__legend span {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .form {
     width: auto;
@@ -326,7 +336,8 @@
   }
 
   .second-form .response-options__item:nth-child(1)::after {
-    @include position-absolute;
+    position: absolute;
+    content: "";
     width: 60px;
     height: 60px;
     background: url("../img/icon-phone.svg") no-repeat #f2f2f2;
@@ -336,7 +347,8 @@
   }
 
   .second-form .response-options__item:nth-child(2)::after {
-    @include position-absolute;
+    position: absolute;
+    content: "";
     width: 60px;
     height: 60px;
     background: url("../img/icon-mail.svg") no-repeat #f2f2f2;
@@ -356,10 +368,6 @@
     @include headline(14px, 14px);
     margin-left: 70px;
     margin-top: 45px;
-  }
-
-  .form__legend span {
-    display: none;
   }
 
   .form-competition__fieldset--radio {
@@ -394,7 +402,7 @@
   .form-competition__fieldset--textarea .form-competition__legend {
     width: 50%;
     margin-right: 135px;
-    padding-bottom: 23px;
+    padding-bottom: 37px;
     margin-bottom: 0;
   }
 
@@ -421,6 +429,10 @@
   .form__btn {
     margin-left: 0;
     width: 48.5%;
+  }
+
+  .second-form .form-competition__legend {
+    display: block;
   }
 }
 

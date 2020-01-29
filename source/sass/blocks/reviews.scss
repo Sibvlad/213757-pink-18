@@ -65,10 +65,10 @@
 }
 
 .map__triangle-white {
-  @include size(100%, auto);
+  @include size(100%, 62px);
   position: absolute;
   content: "";
-  top: 0;
+  top: -15px;
   left: 0;
 }
 
@@ -109,6 +109,11 @@
 
   .map__iframe {
     height: 374px;
+  }
+
+  .map__triangle-white {
+    height: 100%;
+    top: 2px;
   }
 }
 
@@ -196,5 +201,11 @@
     margin-top: 5px;
     margin-left: 80px;
     margin-bottom: 15px;
+  }
+
+  .map__triangle-white {
+    top: -190px;
+
+    width: 100%;
   }
 }
