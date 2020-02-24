@@ -1,7 +1,3 @@
-.advantages {
-  position: relative;
-}
-
 .price h1 {
   font-size: 0;
 }
@@ -17,7 +13,6 @@
 .advantages__slogan h2 {
   @include headline(23px, 30px);
   font-family: "Open Sans", "Arial", sans-serif;
-  position: relative;
   font-weight: 300;
 }
 
@@ -25,20 +20,11 @@
   padding-top: 8px;
 }
 
-.advantages__triangle-white {
-  @include size(100%, 94px);
-  position: absolute;
-  content: "";
-  top: 185px;
-  left: 0;
-  z-index: 15;
-}
-
 .advantages__items {
-  background: #f2f2f2;
   width: 100%;
-  position: relative;
-  height: 782px;
+  background: url("../img/bg-triangle-white.svg") top #f2f2f2 no-repeat;
+  background-size: 100% auto;
+  height: 780px;
 }
 
 .list-benefits {
@@ -46,6 +32,7 @@
   list-style: none;
   text-align: center;
   padding-top: 60px;
+  position: relative;
 }
 
 .list-benefits__item {
@@ -66,7 +53,7 @@
 .advantages__picture--mobile-phone3 {
   @include size(160px, 280px);
   @include position-absolute;
-  bottom: 0;
+  top: 500px;
   left: 25%;
   background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
   margin: 0 auto;
@@ -101,10 +88,6 @@
     margin-top: -36px;
   }
 
-  .advantages__triangle-white {
-    top: 220px;
-    z-index: 8;
-  }
 
   .advantages__slogan {
     background: white;
@@ -123,11 +106,11 @@
 
   .advantages__items {
     height: 481px;
-    max-width: 940px;
     margin: 0 auto;
   }
 
   .list-benefits {
+    max-width: 940px;
     padding-top: 50px;
     text-align: left;
     margin-left: 330px;
@@ -138,7 +121,7 @@
     background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
     position: absolute;
     top: 0;
-    left: 22px;
+    left: -300px;
     z-index: 14;
 
     @media (min-resolution: $retina-dppx) {
@@ -214,24 +197,23 @@
     @include headline(49px, 56px);
   }
 
-  .advantages__triangle-white {
-    top: 320px;
-    width: 100%;
-  }
+  /*.advantages__triangle-white {
+    top: -318px;
+    height: 100%;
+  }*/
 
   .advantages__items {
-    display: flex;
-    justify-content: center;
+    padding-top: 1px;
     padding-left: 0;
     padding-right: 0;
-    height: 580px;
+    height: 585px;
   }
 
   .list-benefits {
     display: flex;
     flex-direction: row;
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0 auto;
     margin-top: 270px;
     padding-top: 50px;
@@ -239,20 +221,24 @@
 
   .list-benefits__item {
     @include headline(18px, 30px);
-    margin-right: 7%;
-    width: 27%;
+    width: 29%;
     margin-bottom: 0;
   }
 
+  .list-benefits__item:nth-child(1) {
+  }
+
+  .list-benefits__item:nth-child(2) {
+  }
+
   .list-benefits__item:last-child {
-    margin-right: 0;
   }
 
   .advantages__picture--mobile-phone1 {
     @include size(292px, 302px);
     background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat;
     position: absolute;
-    top: -5px;
+    top: -275px;
     left: 5px;
     z-index: 14;
 
@@ -267,8 +253,8 @@
     @include size(292px, 302px);
     background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat;
     position: absolute;
-    top: -5px;
-    left: 330px;
+    top: -275px;
+    left: 325px;
     z-index: 14;
 
     @media (min-resolution: $retina-dppx) {
@@ -282,8 +268,8 @@
     @include size(292px, 302px);
     background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat;
     position: absolute;
-    top: -5px;
-    left: 640px;
+    top: -275px;
+    left: 645px;
     z-index: 14;
 
     @media (min-resolution: $retina-dppx) {
@@ -301,7 +287,7 @@
   .effects {
     justify-content: space-between;
     background: #f2f2f2;
-    padding-bottom: 71px;
+    padding-bottom: 65px;
   }
 
   .effects__picture {

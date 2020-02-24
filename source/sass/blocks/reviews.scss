@@ -3,9 +3,15 @@
   text-align: center;
 }
 
-.reviews__item {
+.slider__item {
+  display: none;
+}
+
+.slider__item-active {
   @include indentation(0, 0);
   margin-bottom: 18px;
+  display: block;
+  height: 220px;
 }
 
 .reviews__author-name {
@@ -23,6 +29,10 @@
   font-style: normal;
 }
 
+.slider__toggles {
+  text-align: center;
+}
+
 .slider__toggle {
   @include border-radius(50%);
   display: inline-block;
@@ -34,16 +44,19 @@
 
   &:hover {
     background: #7e868f;
+    transition: 0.3s ease all;
   }
 
   &:active {
     background: #e5e5e5;
+    transition: 0.3s ease all;
   }
 }
 
 .slider__toggle-active {
   border: 2px solid black;
   background-color: $slogan-color;
+  transition: 0.3s ease all;
 }
 
 .reviews__job {
@@ -55,21 +68,24 @@
 }
 
 .map {
-  height: 190px;
   position: relative;
+  height: 190px;
+}
+
+.map::before {
+  background: url("../img/bg-triangle-white-footer.svg")  no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  left: 0;
 }
 
 .map__iframe {
   width: 100%;
   height: 190px;
-}
-
-.map__triangle-white {
-  @include size(100%, 62px);
-  position: absolute;
-  content: "";
-  top: -15px;
-  left: 0;
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -86,7 +102,11 @@
     margin-bottom: 16px;
   }
 
-  .reviews__item {
+  .slider__item {
+    display: none;
+  }
+
+  .slider__item-active {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -110,18 +130,14 @@
   .map__iframe {
     height: 374px;
   }
-
-  .map__triangle-white {
-    height: 100%;
-    top: 2px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .reviews__wrapper {
     padding: 180px 167px;
-    padding-bottom: 15px;
+    padding-bottom: 0;
     position: relative;
+    margin-bottom: -16px;
   }
 
   .reviews__author-name {
@@ -132,19 +148,19 @@
     @include headline(18px, 18px);
     padding-top: 0;
     margin-top: 12px;
+    margin-bottom: 0;
     display: block;
   }
 
   .slider__toggle {
     display: none;
-    position: relative;
   }
 
   .map {
     width: 100%;
-    height: 505px;
+    position: relative;
     margin: 0 auto;
-    background-size: 100%;
+    height: 505px;
   }
 
   .map__iframe {
@@ -157,7 +173,7 @@
     width: 78.672px;
     height: 63.789px;
     top: 73px;
-    left: 563px;
+    left: 45%;
   }
 
   .reviews__toggles-desktop {
@@ -201,11 +217,6 @@
     margin-top: 5px;
     margin-left: 80px;
     margin-bottom: 15px;
-  }
-
-  .map__triangle-white {
-    top: -190px;
-
-    width: 100%;
+    height: 100px;
   }
 }
